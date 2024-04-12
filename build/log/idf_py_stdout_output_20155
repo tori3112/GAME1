@@ -1,0 +1,18 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/bootloader/esp-idf/esptool_py && /home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/wiktoria/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/bootloader/bootloader.bin
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/alphabeta.c.obj
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/board.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Building C object CMakeFiles/GAME1.elf.dir/project_elf_src_esp32.c.obj
+[8/10] Linking CXX executable GAME1.elf
+[9/10] Generating binary image from built executable
+esptool.py vv4.8.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/GAME1.bin
+[10/10] cd /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/esp-idf/esptool_py && /home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/wiktoria/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/partition_table/partition-table.bin /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/GAME1.bin
+GAME1.bin binary size 0xdc230 bytes. Smallest app partition is 0x100000 bytes. 0x23dd0 bytes (14%) free.

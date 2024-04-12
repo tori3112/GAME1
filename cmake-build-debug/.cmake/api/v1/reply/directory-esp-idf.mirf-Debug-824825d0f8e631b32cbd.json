@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/mirf",
+		"source" : "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/components/mirf"
+	}
+}

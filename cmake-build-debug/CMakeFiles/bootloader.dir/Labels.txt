@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/CMakeFiles/bootloader
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/CMakeFiles/bootloader.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/CMakeFiles/bootloader-complete.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/cmake-build-debug/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
