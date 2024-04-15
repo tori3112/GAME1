@@ -1,0 +1,71 @@
+[1/5] cd /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/esp-idf/esptool_py && /home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/wiktoria/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/partition_table/partition-table.bin /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/GAME1.bin
+GAME1.bin binary size 0xdb410 bytes. Smallest app partition is 0x100000 bytes. 0x24bf0 bytes (14%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/bootloader/esp-idf/esptool_py && /home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/wiktoria/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
+[2/3] cd /home/wiktoria/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/wiktoria/esp/esp-idf -D "SERIAL_TOOL=/home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python;;/home/wiktoria/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build -P /home/wiktoria/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 GAME1.bin 0x8000 partition_table/partition-table.bin
+esptool.py vv4.8.dev1
+Serial port /dev/ttyUSB0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: f4:12:fa:df:2a:68
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000ebfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21040 bytes to 13066...
+Writing at 0x00000000... (100 %)
+Wrote 21040 bytes (13066 compressed) at 0x00000000 in 0.7 seconds (effective 226.4 kbit/s)...
+Hash of data verified.
+Compressed 898064 bytes to 552777...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d4cf... (5 %)
+Writing at 0x00028231... (8 %)
+Writing at 0x0002e05d... (11 %)
+Writing at 0x00034cca... (14 %)
+Writing at 0x0003fce9... (17 %)
+Writing at 0x00045d43... (20 %)
+Writing at 0x0004c179... (23 %)
+Writing at 0x00051de2... (26 %)
+Writing at 0x000582f3... (29 %)
+Writing at 0x0005ea25... (32 %)
+Writing at 0x000642e3... (35 %)
+Writing at 0x00069ef0... (38 %)
+Writing at 0x0006fc02... (41 %)
+Writing at 0x00075767... (44 %)
+Writing at 0x0007b64e... (47 %)
+Writing at 0x00080eb1... (50 %)
+Writing at 0x00085dba... (52 %)
+Writing at 0x0008aeb6... (55 %)
+Writing at 0x0008fe9a... (58 %)
+Writing at 0x00095169... (61 %)
+Writing at 0x0009a55f... (64 %)
+Writing at 0x000a0103... (67 %)
+Writing at 0x000a5b24... (70 %)
+Writing at 0x000ab88f... (73 %)
+Writing at 0x000b1cb6... (76 %)
+Writing at 0x000b8344... (79 %)
+Writing at 0x000bdc78... (82 %)
+Writing at 0x000c31d3... (85 %)
+Writing at 0x000cd057... (88 %)
+Writing at 0x000d481f... (91 %)
+Writing at 0x000da84c... (94 %)
+Writing at 0x000e0b31... (97 %)
+Writing at 0x000e6f63... (100 %)
+Wrote 898064 bytes (552777 compressed) at 0x00010000 in 12.9 seconds (effective 557.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 314.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

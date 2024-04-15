@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "GAME1",
-    "project_version":    "fb5b7f0-dirty",
+    "project_version":    "c020355-dirty",
     "project_path":       "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1",
     "idf_path":           "/home/wiktoria/esp/esp-idf",
     "build_dir":          "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build",
@@ -2352,18 +2352,6 @@
             "managed_priv_reqs": [],
             "include_dirs": [ "." ]
         },
-        "protocol_examples_common": {
-            "alias": "idf::protocol_examples_common",
-            "target": "___idf_protocol_examples_common",
-            "prefix": "idf",
-            "dir": "/home/wiktoria/esp/esp-idf/examples/common_components/protocol_examples_common",
-            "lib": "__idf_protocol_examples_common",
-            "reqs": [],
-            "priv_reqs": [ "esp_netif", "driver", "esp_wifi", "vfs" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
-        },
         "espressif__mdns": {
             "alias": "idf::espressif__mdns",
             "target": "___idf_espressif__mdns",
@@ -2372,6 +2360,18 @@
             "lib": "__idf_espressif__mdns",
             "reqs": [ "lwip", "console", "esp_netif" ],
             "priv_reqs": [ "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "protocol_examples_common": {
+            "alias": "idf::protocol_examples_common",
+            "target": "___idf_protocol_examples_common",
+            "prefix": "idf",
+            "dir": "/home/wiktoria/esp/esp-idf/examples/common_components/protocol_examples_common",
+            "lib": "__idf_protocol_examples_common",
+            "reqs": [],
+            "priv_reqs": [ "esp_netif", "driver", "esp_wifi", "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]

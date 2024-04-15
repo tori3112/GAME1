@@ -6202,7 +6202,10 @@
                         "help": "Set Auto Retransmit Delay.\nDelay = value * 250us.",
                         "id": "RETRANSMIT_DELAY",
                         "name": "RETRANSMIT_DELAY",
-                        "range": null,
+                        "range": [
+                            0,
+                            15
+                        ],
                         "title": "Auto Retransmit Delay",
                         "type": "int"
                     }

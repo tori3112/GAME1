@@ -37,6 +37,21 @@
 #include "limits.h"
 
 /**
+ * GLOBAL VARIABLES
+ **/
+bool game_over;
+
+#define NUM_CHANNELS 7
+char position_string[41];
+char outcome_message[85];
+int adc_values[NUM_CHANNELS] = {0};
+int channels[NUM_CHANNELS] = {ADC1_CHANNEL_0, ADC1_CHANNEL_1, ADC1_CHANNEL_3,
+                              ADC1_CHANNEL_5, ADC1_CHANNEL_6, ADC1_CHANNEL_2, ADC1_CHANNEL_7};
+TaskHandle_t task_handler = NULL;
+int thresholds[NUM_CHANNELS];
+uint8_t moveC=0;
+
+/**
  * nRF24 MODULE configs
  */
 #if CONFIG_ADVANCED
@@ -111,7 +126,7 @@ void receiver(void *pvParameters)
 #if CONFIG_SENDER
 void sender(void *pvParameters)
 {
-    ESP_LOGI(pcTaskGetName(0), "Start");
+    ESP_LOGI(pcTaskGetName(0), "Start Sender Configuration");
     NRF24_t dev;
     Nrf24_init(&dev);
     uint8_t payload = 4;
@@ -132,15 +147,16 @@ void sender(void *pvParameters)
     //Print settings
     Nrf24_printDetails(&dev);
 
-    uint8_t buf[32];
+    uint8_t buf[4];
     while(1) {
-        TickType_t nowTick = xTaskGetTickCount();
-        sprintf((char *)buf, "Hello World %"PRIu32, nowTick);
+        /*TickType_t nowTick = xTaskGetTickCount();
+        sprintf((char *)buf, "Hello World %"PRIu32, nowTick);*/
+        memcpy(buf,&moveC, sizeof(moveC));
         Nrf24_send(&dev, buf);
-        vTaskDelay(1);
-        ESP_LOGI(pcTaskGetName(0), "Wait for sending.....");
+        vTaskDelay(100/portTICK_PERIOD_MS);
         if (Nrf24_isSend(&dev, 1000)) {
-            ESP_LOGI(pcTaskGetName(0),"Send success:%s", buf);
+            ESP_LOGI(pcTaskGetName(0),"Send success: %hhu", moveC);
+            moveC=0;
         } else {
             ESP_LOGW(pcTaskGetName(0),"Send fail:");
         }
@@ -161,19 +177,6 @@ void sender(void *pvParameters)
 /* TAGS FOR LOGS*/
 static const char *TAG = "GAME1";
 static const char *TEST_TAG = "game-test";
-/**
- * GLOBAL VARIABLES
- **/
-
-bool game_over;
-#define NUM_CHANNELS 7
-char position_string[41];
-char outcome_message[85];
-int adc_values[NUM_CHANNELS] = {0};
-int channels[NUM_CHANNELS] = {ADC1_CHANNEL_0, ADC1_CHANNEL_1, ADC1_CHANNEL_3,
-                              ADC1_CHANNEL_5, ADC1_CHANNEL_6, ADC1_CHANNEL_2, ADC1_CHANNEL_7};
-TaskHandle_t task_handler = NULL;
-int thresholds[NUM_CHANNELS];
 
 /* TESTING ASSERTIONS */
 #define TEST_ASSERT_MESSAGE( condition, ...)                                \
@@ -302,13 +305,13 @@ void setup_adc() {
     adc1_config_channel_atten(ADC1_CHANNEL_2,ADC_ATTEN_DB_11);
     adc1_config_channel_atten(ADC1_CHANNEL_7,ADC_ATTEN_DB_11);
 
-    thresholds[0] = adc1_get_raw(ADC1_CHANNEL_0) - 500;
-    thresholds[1] = adc1_get_raw(ADC1_CHANNEL_1) - 500;
-    thresholds[2] = adc1_get_raw(ADC1_CHANNEL_2) - 500;
-    thresholds[3] = adc1_get_raw(ADC1_CHANNEL_3) - 500;
-    thresholds[5] = adc1_get_raw(ADC1_CHANNEL_5) - 500;
-    thresholds[6] = adc1_get_raw(ADC1_CHANNEL_6) - 500;
-    thresholds[7] = adc1_get_raw(ADC1_CHANNEL_7) - 500;
+    thresholds[0] = adc1_get_raw(ADC1_CHANNEL_0) - 300;
+    thresholds[1] = adc1_get_raw(ADC1_CHANNEL_1) - 300;
+    thresholds[2] = adc1_get_raw(ADC1_CHANNEL_2) - 300;
+    thresholds[3] = adc1_get_raw(ADC1_CHANNEL_3) - 300;
+    thresholds[5] = adc1_get_raw(ADC1_CHANNEL_5) - 300;
+    thresholds[6] = adc1_get_raw(ADC1_CHANNEL_6) - 300;
+    thresholds[7] = adc1_get_raw(ADC1_CHANNEL_7) - 300;
 
 }
 
@@ -317,6 +320,7 @@ void run_game() {
     while (1) {
         vTaskDelay(100/portTICK_PERIOD_MS);
         //GAME INITIALISATION
+        ESP_LOGI("GAME1","game initialised");
         bitboard bb = {0, 0, 0};
         game_over = false;
         int turn = HUMAN;
@@ -324,6 +328,7 @@ void run_game() {
         while (!game_over) {
             switch (turn) {
                 case HUMAN: {
+                    ESP_LOGI("GAME1","human turn");
                     /**
                      * PLACE FOR GETTING SIGNALS
                      * FROM SENSORS
@@ -338,19 +343,21 @@ void run_game() {
                         for (int i=0; i<NUM_CHANNELS+1; i++) {
                             if (i==4) continue;
                             if (adc_values[i] < thresholds[i]) {
+                                vTaskDelay(500/portTICK_PERIOD_MS);
                                 keepRunning = false;
                                 moveH=get_idx_from_value(adc_values,adc_values[i]);
-                                ESP_LOGI("ADC Monitor", "Value from channel %d (Column %d) is below the threshold: %d < %d", channels[i], i + 1, adc_values[i], thresholds[i]);
+                                ESP_LOGI("GAME:ADC", "channel %d (Column %d) is below the threshold: %d < %d", channels[i], i + 1, adc_values[i], thresholds[i]);
                                 break;
                             }
                         }
                     }
                     play(&bb,moveH);
-                    strncat(position_string,&moveH,1);
+                    TEST_ASSERT_MESSAGE(false,"MASK is %llu, POSITION is %llu", bb.mask, bb.position);
+                    //strncat(position_string,&moveH,1);
                     vTaskDelay(100/portTICK_PERIOD_MS);
                     game_over = check_win(bb.position);
                     if (game_over) {
-                        TEST_ASSERT_MESSAGE(false,"game won by human");
+                        ESP_LOGI("GAME1","game won by human");
                         strcpy(outcome_message,"Conratulations, you won! Press the reset button to play again.");
                         vTaskDelay(100/portTICK_PERIOD_MS);
                         vTaskDelete(task_handler);
@@ -360,22 +367,20 @@ void run_game() {
                     }
                     break;}
                 case COMPUTER: {
-                    move next_move = negamax_ab_bb(bb,UINT64_MIN,UINT64_MAX,20);
+                    ESP_LOGI("GAME1","computer turn");
+                    move next_move = negamax_ab_bb(bb,-UINT64_MAX,UINT64_MAX,20);
+                    moveC = next_move.col;
                     /**
                      * PLACE FOR SENDING SIGNAL
                      * TO THE SERVOMOTORS
                      */
-                     uint32_t dataToSend = next_move.col;
-                    //play(&bb,next_move.col);
+                    play(&bb,moveC);
+                    TEST_ASSERT_MESSAGE(false,"MASK is %llu, POSITION is %llu", bb.mask, bb.position);
                     //strncat(position_string,&moveC,1);
-                    play(&bb, 4);
-                    char moveC = '4';
-                    strncat(position_string, &moveC, 1);
                     vTaskDelay(100 / portTICK_PERIOD_MS);
-                    // SEND MESSAGE
                     game_over = check_win(bb.position);
                     if (game_over) {
-                        TEST_ASSERT_MESSAGE(false, "game won by computer");
+                        ESP_LOGI("GAME1","game won by computer");
                         strcpy(outcome_message,
                                "Unfortunately you lost, better luck next time! Press the reset button to try again.");
                         vTaskDelay(100 / portTICK_PERIOD_MS);
@@ -394,23 +399,23 @@ void run_game() {
 }
 
 void app_main(void)
-{   /* INITIALISE SOME COMPONENTS */
+{   /* INITIALISE SOME COMPONENTS *//*
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
     initialise_mdns();
     netbiosns_init();
     netbiosns_set_name(MDNS_HOST_NAME);
-    /* CONNECT TO WIFI AND START RESTFUL SERVER */
+    *//* CONNECT TO WIFI AND START RESTFUL SERVER *//*
     ESP_ERROR_CHECK(example_connect());
     ESP_ERROR_CHECK(init_fs());
-    ESP_ERROR_CHECK(start_rest_server(CONFIG_EXAMPLE_WEB_MOUNT_POINT));
+    ESP_ERROR_CHECK(start_rest_server(CONFIG_EXAMPLE_WEB_MOUNT_POINT));*/
     /* TASKS FOR nRF24 MODULE */
     #if CONFIG_SENDER
         xTaskCreate(&sender, "SENDER", 1024*3, NULL, 2, NULL);
     #endif
     /* CREATE TASK FOR THE GAME LOOP*/
-    vTaskDelay(10000 / portTICK_PERIOD_MS);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
     xTaskCreate(run_game,"GAME",4096,NULL,10,&task_handler);
 
 }

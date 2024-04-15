@@ -1,0 +1,199 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+[0m
+[0;33m0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375a82: panic_abort at /home/wiktoria/esp/esp-idf/components/esp_system/panic.c:472
+0x4037cae5: esp_system_abort at /home/wiktoria/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40385611: abort at /home/wiktoria/esp/esp-idf/components/newlib/abort.c:38
+0x4037cadb: _esp_error_check_failed at /home/wiktoria/esp/esp-idf/components/esp_system/esp_err.c:50
+0x4200ac34: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:412 (discriminator 1)
+0x4209d063: main_task at /home/wiktoria/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d5f1: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759f8: esp_restart_noos at /home/wiktoria/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m
