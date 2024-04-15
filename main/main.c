@@ -49,7 +49,7 @@ int channels[NUM_CHANNELS] = {ADC1_CHANNEL_0, ADC1_CHANNEL_1, ADC1_CHANNEL_3,
                               ADC1_CHANNEL_5, ADC1_CHANNEL_6, ADC1_CHANNEL_2, ADC1_CHANNEL_7};
 TaskHandle_t task_handler = NULL;
 int thresholds[NUM_CHANNELS];
-uint8_t moveC=0;
+uint8_t moveC;
 
 /**
  * nRF24 MODULE configs
