@@ -139,32 +139,220 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ecb3bcd-86ab-43c4-a220-5186c433ade0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GAME1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.bin_timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/.bin_timestamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/git-data/head-ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/GAME1.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/GAME1.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootloader/.bin_timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/.bin_timestamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootloader/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootloader/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootloader/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootloader/bootloader.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/bootloader/bootloader.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/build/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/config/kconfig_menus.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/config/kconfig_menus.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/config/sdkconfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/config/sdkconfig.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/config/sdkconfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/config/sdkconfig.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/config/sdkconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/config/sdkconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_29384" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_29384" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_100356" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_100466" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_102091" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_102174" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_102283" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_103415" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_103523" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_111676" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_111785" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_113691" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_113800" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_115835" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_115943" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_118135" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_118873" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_118990" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_119699" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_119808" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_120330" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_120443" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_123191" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_123299" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_123689" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_123798" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_124516" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_124625" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_125327" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_125437" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_126717" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_126826" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_127619" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_127727" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_127981" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_128096" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_128532" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_128643" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_129126" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_129234" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_130301" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_130411" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_132114" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_132225" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_135260" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_135370" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_135693" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_135805" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_136268" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_136387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_136963" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_137072" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_137739" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_137850" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_138238" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_138351" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_138440" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_138558" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_140107" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_140220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_141608" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_141716" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_142167" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_142458" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_31058" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_32350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_37249" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_37879" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_38120" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_38285" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_38298" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_39990" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_40106" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_40435" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_44778" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_44810" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_52547" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_52663" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_56745" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_56853" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_68315" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_68425" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_71692" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_71801" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_89002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_89114" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_91938" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_92053" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_92731" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_92839" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_93708" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_93816" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_95002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_95113" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_96509" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_96640" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_97987" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_98100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_99426" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stderr_output_99540" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_100356" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_100466" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_102091" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_102174" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_102283" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_103415" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_103523" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_111676" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_111785" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_113691" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_113800" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_115835" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_115943" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_118135" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_118873" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_118990" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_119699" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_119808" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_120330" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_120443" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_123191" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_123299" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_123689" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_123798" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_124516" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_124625" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_125327" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_125437" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_126717" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_126826" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_127619" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_127727" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_127981" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_128096" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_128532" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_128643" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_129126" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_129234" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_130301" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_130411" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_132114" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_132225" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_135260" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_135370" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_135693" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_135805" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_136268" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_136387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_136963" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_137072" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_137739" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_137850" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_138238" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_138351" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_138440" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_138558" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_140107" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_140220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_141608" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_141716" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_142167" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_142458" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_31058" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_32350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_37249" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_37879" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_38120" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_38285" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_38298" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_39990" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_40106" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_40435" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_44778" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_44810" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_52547" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_52663" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_56745" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_56853" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_68315" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_68425" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_71692" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_71801" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_89002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_89114" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_91938" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_92053" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_92731" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_92839" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_93708" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_93816" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_95002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_95113" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_96509" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_96640" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_97987" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_98100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_99426" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/log/idf_py_stdout_output_99540" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/project_description.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/project_description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-432f8473341d6515b7ba.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-04-15T16-52-11-0280.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-__idf_esp_app_format-Debug-74d7186f4a2a1d7eaa3d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/git-data/head-ref" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/git-data/head-ref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/project_description.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/project_description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sdkconfig" beforeDir="false" afterPath="$PROJECT_DIR$/sdkconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sdkconfig.old" beforeDir="false" afterPath="$PROJECT_DIR$/sdkconfig.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
@@ -207,27 +395,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CPPToolchains",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="CMake Application.GAME1.elf">
     <configuration name="GAME1.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GAME1" TARGET_NAME="GAME1.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GAME1" RUN_TARGET_NAME="GAME1.elf">
       <method v="2">
@@ -614,11 +802,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="apidoc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GAME1" TARGET_NAME="apidoc" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -968,6 +1151,8 @@
       <workItem from="1713196404252" duration="3871000" />
       <workItem from="1713200289485" duration="621000" />
       <workItem from="1713200920334" duration="11275000" />
+      <workItem from="1713216099781" duration="432000" />
+      <workItem from="1713216722735" duration="573000" />
     </task>
     <servers />
   </component>

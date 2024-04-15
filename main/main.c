@@ -156,7 +156,6 @@ void sender(void *pvParameters)
         vTaskDelay(100/portTICK_PERIOD_MS);
         if (Nrf24_isSend(&dev, 1000)) {
             ESP_LOGI(pcTaskGetName(0),"Send success: %hhu", moveC);
-            moveC=0;
         } else {
             ESP_LOGW(pcTaskGetName(0),"Send fail:");
         }
