@@ -1,0 +1,120 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008b81: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:424
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008b81: app_main at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:424
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008b87: can_play at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:32
+0x42008cfd: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:192
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008b87: can_play at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:32
+0x42008cfd: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:192
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008b87: can_play at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:32
+0x42008cfd: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:192
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008b87: can_play at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:32
+0x42008cfd: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:192
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008b87: can_play at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:32
+0x42008cfd: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:192
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200de73: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e01e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008d31: negamax_ab_bb at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/alphabeta.c:191
+0x42008a83: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:373
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

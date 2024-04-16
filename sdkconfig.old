@@ -1,3 +1,7 @@
+#
+# Automatically generated file. DO NOT EDIT.
+# Espressif IoT Development Framework (ESP-IDF) 5.3.0 Project Configuration
+#
 CONFIG_SOC_MPU_MIN_REGION_SIZE=0x20000000
 CONFIG_SOC_MPU_REGIONS_MAX_NUM=8
 CONFIG_SOC_ADC_SUPPORTED=y
@@ -529,11 +533,7 @@ CONFIG_CE_GPIO=34
 CONFIG_CSN_GPIO=33
 CONFIG_SPI2_HOST=y
 # CONFIG_SPI3_HOST is not set
-CONFIG_ADVANCED=y
-# CONFIG_RF_RATIO_2M is not set
-CONFIG_RF_RATIO_1M=y
-# CONFIG_RF_RATIO_250K is not set
-CONFIG_RETRANSMIT_DELAY=0
+# CONFIG_ADVANCED is not set
 # end of nRF24L01 Configuration
 
 #

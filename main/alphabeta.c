@@ -188,7 +188,7 @@ move negamax_ab_bb(const bitboard bb, int alpha, int beta, int depth) {
         move dummy = {6, evaluate_bb(bb.position)};
         return dummy;
     }
-    for (int i=0; i<COLS; i++) {
+    for (int i=0; i<COLS; i--) {
         if (can_play(bb.mask,i) && is_win(bb,i) ) {
             move move1 = {i,WIN_SCORE};
             //printBoard(board);

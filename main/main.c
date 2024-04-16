@@ -40,6 +40,7 @@
  * GLOBAL VARIABLES
  **/
 bool game_over;
+NRF24_t dev;
 
 #define NUM_CHANNELS 7
 char position_string[41];
@@ -127,7 +128,6 @@ void receiver(void *pvParameters)
 void sender(void *pvParameters)
 {
     ESP_LOGI(pcTaskGetName(0), "Start Sender Configuration");
-    NRF24_t dev;
     Nrf24_init(&dev);
     uint8_t payload = 4;
     uint8_t channel = 112;
@@ -148,14 +148,17 @@ void sender(void *pvParameters)
     Nrf24_printDetails(&dev);
 
     uint8_t buf[4];
+    int i;
     while(1) {
         /*TickType_t nowTick = xTaskGetTickCount();
         sprintf((char *)buf, "Hello World %"PRIu32, nowTick);*/
-        memcpy(buf,&moveC, sizeof(moveC));
-        Nrf24_send(&dev, buf);
+        memcpy(buf,&moveC, sizeof(moveC));//
+        i =  moveC;
+        Nrf24_send(&dev, &i);
         vTaskDelay(100/portTICK_PERIOD_MS);
         if (Nrf24_isSend(&dev, 1000)) {
-            ESP_LOGI(pcTaskGetName(0),"Send success: %hhu", moveC);
+            ESP_LOGI(pcTaskGetName(0),"Send success: %d", i);
+            //vTaskDelete(task_handler);
         } else {
             ESP_LOGW(pcTaskGetName(0),"Send fail:");
         }
@@ -304,18 +307,26 @@ void setup_adc() {
     adc1_config_channel_atten(ADC1_CHANNEL_2,ADC_ATTEN_DB_11);
     adc1_config_channel_atten(ADC1_CHANNEL_7,ADC_ATTEN_DB_11);
 
-    thresholds[0] = adc1_get_raw(ADC1_CHANNEL_0) - 300;
-    thresholds[1] = adc1_get_raw(ADC1_CHANNEL_1) - 300;
-    thresholds[2] = adc1_get_raw(ADC1_CHANNEL_2) - 300;
-    thresholds[3] = adc1_get_raw(ADC1_CHANNEL_3) - 300;
-    thresholds[5] = adc1_get_raw(ADC1_CHANNEL_5) - 300;
-    thresholds[6] = adc1_get_raw(ADC1_CHANNEL_6) - 300;
-    thresholds[7] = adc1_get_raw(ADC1_CHANNEL_7) - 300;
+    /*thresholds[0] = adc1_get_raw(ADC1_CHANNEL_0) - 400;
+    thresholds[1] = adc1_get_raw(ADC1_CHANNEL_1) - 400;
+    thresholds[2] = adc1_get_raw(ADC1_CHANNEL_2) - 400;
+    thresholds[3] = adc1_get_raw(ADC1_CHANNEL_3) - 400;
+    thresholds[5] = adc1_get_raw(ADC1_CHANNEL_5) - 400;
+    thresholds[6] = adc1_get_raw(ADC1_CHANNEL_6) - 400;
+    thresholds[7] = adc1_get_raw(ADC1_CHANNEL_7) - 400;*/
+    thresholds[0] = 1400;
+    thresholds[1] = 1400;
+    thresholds[2] = 1400;
+    thresholds[3] = 1400;
+    thresholds[4] = 1400;
+    thresholds[5] = 1400;
+    thresholds[6] = 1400;
+    thresholds[7] = 1400;
+
 
 }
 
 void run_game() {
-    setup_adc();
     while (1) {
         vTaskDelay(100/portTICK_PERIOD_MS);
         //GAME INITIALISATION
@@ -366,9 +377,11 @@ void run_game() {
                     }
                     break;}
                 case COMPUTER: {
+                    setup_adc();
                     ESP_LOGI("GAME1","computer turn");
                     move next_move = negamax_ab_bb(bb,-UINT64_MAX,UINT64_MAX,20);
                     moveC = next_move.col;
+                    //if (Nrf24_isSend(&dev,moveC);
                     /**
                      * PLACE FOR SENDING SIGNAL
                      * TO THE SERVOMOTORS
@@ -411,10 +424,10 @@ void app_main(void)
     ESP_ERROR_CHECK(start_rest_server(CONFIG_EXAMPLE_WEB_MOUNT_POINT));*/
     /* TASKS FOR nRF24 MODULE */
     #if CONFIG_SENDER
-        xTaskCreate(&sender, "SENDER", 1024*3, NULL, 2, NULL);
+        xTaskCreate(&sender, "SENDER", 1024*3, NULL, 2, &task_handler);
     #endif
     /* CREATE TASK FOR THE GAME LOOP*/
     vTaskDelay(100 / portTICK_PERIOD_MS);
-    xTaskCreate(run_game,"GAME",4096,NULL,10,&task_handler);
+    xTaskCreate(run_game,"GAME",4096,NULL,10,NULL);
 
 }
