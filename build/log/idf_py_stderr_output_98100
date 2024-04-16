@@ -1,0 +1,268 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4200f9c0: adc1_lock_release at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:378
+0x4200faac: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:406
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037cc1a: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetSchedulerState at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4931
+0x403769a3: lock_release_generic at /home/wiktoria/esp/esp-idf/components/newlib/locks.c:173
+0x40376a81: _lock_release at /home/wiktoria/esp/esp-idf/components/newlib/locks.c:198
+0x4200f9be: adc1_lock_release at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:378
+0x4200faac: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:406
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200f979: adc1_rtc_mode_acquire at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:367
+0x4200f9f9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:386
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4201e7bf: vPortExitCriticalSafe at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) s_sar_power_acquire at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:66
+0x4201e897: sar_periph_ctrl_adc_oneshot_power_acquire at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:103
+0x4200f930: adc1_rtc_mode_acquire at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:362
+0x4200f9f9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:386
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200f979: adc1_rtc_mode_acquire at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:367
+0x4200f9f9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:386
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200f979: adc1_rtc_mode_acquire at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:367
+0x4200f9f9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:386
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4201e7bf: vPortExitCriticalSafe at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) s_sar_power_acquire at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:66
+0x4201e897: sar_periph_ctrl_adc_oneshot_power_acquire at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:103
+0x4200f930: adc1_rtc_mode_acquire at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:362
+0x4200f9f9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:386
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4201e863: vPortExitCriticalSafe at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) s_sar_power_release at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:80
+0x4201e89f: sar_periph_ctrl_adc_oneshot_power_release at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:108
+0x4200f9b5: adc1_lock_release at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:377
+0x4200faac: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:406
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037cc1a: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetSchedulerState at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4931
+0x40376927: lock_acquire_generic at /home/wiktoria/esp/esp-idf/components/newlib/locks.c:123
+0x40376a41: _lock_acquire at /home/wiktoria/esp/esp-idf/components/newlib/locks.c:154
+0x4200f92d: adc1_rtc_mode_acquire at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:361
+0x4200f9f9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:386
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4201e863: vPortExitCriticalSafe at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) s_sar_power_release at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:80
+0x4201e89f: sar_periph_ctrl_adc_oneshot_power_release at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:108
+0x4200f9b5: adc1_lock_release at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:377
+0x4200faac: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:406
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4201e7bf: vPortExitCriticalSafe at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) s_sar_power_acquire at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:66
+0x4201e897: sar_periph_ctrl_adc_oneshot_power_acquire at /home/wiktoria/esp/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c:103
+0x4200f930: adc1_rtc_mode_acquire at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:362
+0x4200f9f9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:386
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4037ab4f: xQueueGenericSend at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x403769f9: lock_release_generic at /home/wiktoria/esp/esp-idf/components/newlib/locks.c:192
+0x40376a81: _lock_release at /home/wiktoria/esp/esp-idf/components/newlib/locks.c:198
+0x4200f9be: adc1_lock_release at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:378
+0x4200faac: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:406
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4200f983: adc1_lock_release at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:374
+0x4200faac: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:406
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200e2b3: task_wdt_timeout_handling at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+0x4200e45e: task_wdt_isr at /home/wiktoria/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+0x40377279: _xt_lowint1 at /home/wiktoria/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037b4db: vPortClearInterruptMaskFromISR at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4200faa9: adc1_get_raw at /home/wiktoria/esp/esp-idf/components/driver/deprecated/adc_legacy.c:404
+0x42008952: run_game at /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:344
+0x4037b135: vPortTaskWrapper at /home/wiktoria/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

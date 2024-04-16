@@ -1,0 +1,273 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d84
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 15 2024 19:09:36[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0fe0ch ( 65036) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0001fe34 vaddr=3fc93e00 size=001e4h (   484) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f7a8h (128936) map[0m
+[0;32mI (142) esp_image: segment 3: paddr=0003f7d0 vaddr=3fc93fe4 size=028c4h ( 10436) load[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004209c vaddr=40374000 size=0fdb8h ( 64952) load[0m
+[0;32mI (168) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (168) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) cpu_start: Application information:[0m
+[0;32mI (192) cpu_start: Project name:     GAME1[0m
+[0;32mI (197) cpu_start: App version:      c020355-dirty[0m
+[0;32mI (203) cpu_start: Compile time:     Apr 15 2024 19:54:52[0m
+[0;32mI (209) cpu_start: ELF file SHA256:  82aabde8b...[0m
+[0;32mI (214) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa-dirty[0m
+[0;32mI (221) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (226) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (231) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (235) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (243) heap_init: At 3FC97250 len 000524C0 (329 KiB): RAM[0m
+[0;32mI (249) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (255) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (289) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (297) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (304) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) SENDER: Start Sender Configuration[0m
+[0;32mI (321) NRF24: CONFIG_MISO_GPIO=37[0m
+[0;32mI (331) NRF24: CONFIG_MOSI_GPIO=35[0m
+[0;32mI (331) NRF24: CONFIG_SCLK_GPIO=36[0m
+[0;32mI (341) NRF24: CONFIG_CE_GPIO=38[0m
+[0;32mI (341) NRF24: CONFIG_CSN_GPIO=39[0m
+[0;32mI (341) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (351) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (361) NRF24: spi_bus_initialize=0[0m
+[0;32mI (371) NRF24: spi_bus_add_device=0[0m
+[0;33mW (371) SENDER: Set RF Data Ratio to 1MBps[0m
+[0;33mW (371) SENDER: CONFIG_RETRANSMIT_DELAY=0[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO39
+CE Pin		 = GPIO38
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x4142434445 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x4142434445
+RX_PW_P0-6	 = 0x04 0x04 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x70
+RF_SETUP	 = 0x07
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 1Mbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 250 us
+[0;32mI (531) SENDER: Send success: 0[0m
+[0;32mI (3631) SENDER: Send success: 0[0m
+[0;32mI (6731) SENDER: Send success: 0[0m
+[0;32mI (9831) SENDER: Send success: 0[0m
+[0;32mI (10431) main_task: Returned from app_main()[0m
+[0;32mI (10531) GAME1: game initialised[0m
+[0;32mI (10531) GAME1: human turn[0m
+[0;32mI (12931) SENDER: Send success: 0[0m
+[0;31mE (15511) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (15511) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (15511) task_wdt: Tasks currently running:[0m
+[0;31mE (15511) task_wdt: CPU 0: GAME[0m
+[0;31mE (15511) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (15511) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E260 0x4037B4DB:0x3FC9E270 0x4200FA91:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (16031) SENDER: Send success: 0[0m
+[0;32mI (19131) SENDER: Send success: 0[0m
+[0;31mE (20511) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (20511) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (20511) task_wdt: Tasks currently running:[0m
+[0;31mE (20511) task_wdt: CPU 0: GAME[0m
+[0;31mE (20511) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (20511) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E1B0 0x4037CC1A:0x3FC9E1C0 0x4037AF51:0x3FC9E1E0 0x40376980:0x3FC9E220 0x40376A41:0x3FC9E250 0x4200F915:0x3FC9E270 0x4200F9E1:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (22231) SENDER: Send success: 0[0m
+[0;32mI (25331) SENDER: Send success: 0[0m
+[0;31mE (25511) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (25511) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (25511) task_wdt: Tasks currently running:[0m
+[0;31mE (25511) task_wdt: CPU 0: GAME[0m
+[0;31mE (25511) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (25511) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x4200F9B2:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (28431) SENDER: Send success: 0[0m
+[0;32mI (30271) GAME:ADC: channel 3 (Column 3) is below the threshold: 1662 < 1664[0m
+[0;31mE (30271) game-test: MASK is 4, POSITION is 4[0m
+[0;32mI (31531) SENDER: Send success: 0[0m
+[0;32mI (32371) GAME1: computer turn[0m
+[0;31mE (32371) game-test: MASK is 36, POSITION is 32[0m
+[0;32mI (34631) SENDER: Send success: 0[0m
+[0;32mI (37471) GAME1: human turn[0m
+[0;32mI (37731) SENDER: Send success: 0[0m
+[0;32mI (40831) SENDER: Send success: 0[0m
+[0;31mE (42451) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (42451) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (42451) task_wdt: Tasks currently running:[0m
+[0;31mE (42451) task_wdt: CPU 0: GAME[0m
+[0;31mE (42451) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (42451) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E260 0x4037B4DB:0x3FC9E270 0x4200FA91:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (43931) SENDER: Send success: 0[0m
+[0;32mI (47031) SENDER: Send success: 0[0m
+[0;31mE (47451) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (47451) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (47451) task_wdt: Tasks currently running:[0m
+[0;31mE (47451) task_wdt: CPU 0: GAME[0m
+[0;31mE (47451) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (47451) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E1F0 0x4037B4DB:0x3FC9E200 0x4201E84B:0x3FC9E220 0x4201E887:0x3FC9E240 0x4200F99D:0x3FC9E260 0x4200FA94:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (49451) GAME:ADC: channel 2 (Column 6) is below the threshold: 1608 < 1609[0m
+[0;31mE (49451) game-test: MASK is 4132, POSITION is 4100[0m
+[0;32mI (50131) SENDER: Send success: 0[0m
+[0;32mI (51551) GAME1: computer turn[0m
+[0;31mE (51551) game-test: MASK is 4133, POSITION is 33[0m
+[0;32mI (53231) SENDER: Send success: 0[0m
+[0;32mI (56331) SENDER: Send success: 0[0m
+[0;32mI (56651) GAME1: human turn[0m
+[0;32mI (59431) SENDER: Send success: 0[0m
+[0;31mE (61631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (61631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (61631) task_wdt: Tasks currently running:[0m
+[0;31mE (61631) task_wdt: CPU 0: GAME[0m
+[0;31mE (61631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (61631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E1E0 0x4037CC1A:0x3FC9E1F0 0x403769A3:0x3FC9E210 0x40376A81:0x3FC9E240 0x4200F9A6:0x3FC9E260 0x4200FA94:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (62531) SENDER: Send success: 0[0m
+[0;32mI (65631) SENDER: Send success: 0[0m
+[0;31mE (66631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (66631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (66631) task_wdt: Tasks currently running:[0m
+[0;31mE (66631) task_wdt: CPU 0: GAME[0m
+[0;31mE (66631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (66631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E240 0x4037B4DB:0x3FC9E250 0x4200F961:0x3FC9E270 0x4200F9E1:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (68731) SENDER: Send success: 0[0m
+[0;31mE (71631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (71631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (71631) task_wdt: Tasks currently running:[0m
+[0;31mE (71631) task_wdt: CPU 0: GAME[0m
+[0;31mE (71631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (71631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x4200F9EA:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (71831) SENDER: Send success: 0[0m
+[0;32mI (74931) SENDER: Send success: 0[0m
+[0;31mE (76631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (76631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (76631) task_wdt: Tasks currently running:[0m
+[0;31mE (76631) task_wdt: CPU 0: GAME[0m
+[0;31mE (76631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (76631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E260 0x4037B4DB:0x3FC9E270 0x4200FA91:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (78031) SENDER: Send success: 0[0m
+[0;32mI (81131) SENDER: Send success: 0[0m
+[0;31mE (81631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (81631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (81631) task_wdt: Tasks currently running:[0m
+[0;31mE (81631) task_wdt: CPU 0: GAME[0m
+[0;31mE (81631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (81631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E1B0 0x4037CC1A:0x3FC9E1C0 0x4037AF51:0x3FC9E1E0 0x40376980:0x3FC9E220 0x40376A41:0x3FC9E250 0x4200F915:0x3FC9E270 0x4200F9E1:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (84231) SENDER: Send success: 0[0m
+[0;31mE (86631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (86631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (86631) task_wdt: Tasks currently running:[0m
+[0;31mE (86631) task_wdt: CPU 0: GAME[0m
+[0;31mE (86631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (86631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E260 0x4037B4DB:0x3FC9E270 0x4200FA91:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (87331) SENDER: Send success: 0[0m
+[0;32mI (90431) SENDER: Send success: 0[0m
+[0;31mE (91631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (91631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (91631) task_wdt: Tasks currently running:[0m
+[0;31mE (91631) task_wdt: CPU 0: GAME[0m
+[0;31mE (91631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (91631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E240 0x4037B4DB:0x3FC9E250 0x4200F961:0x3FC9E270 0x4200F9E1:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (93531) SENDER: Send success: 0[0m
+[0;32mI (96631) SENDER: Send success: 0[0m
+[0;31mE (96631) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (96631) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (96631) task_wdt: Tasks currently running:[0m
+[0;31mE (96631) task_wdt: CPU 0: GAME[0m
+[0;31mE (96631) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (96631) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200E29B:0x3FC94E00 0x4200E446:0x3FC94E20 0x40377279:0x3FC94E40 0x400559DD:0x3FC9E260 0x4037B4DB:0x3FC9E270 0x4200FA91:0x3FC9E290 0x42008946:0x3FC9E2D0 0x4037B135:0x3FC9E320
+
+[0;32mI (97181) GAME:ADC: channel 3 (Column 3) is below the threshold: 1663 < 1664[0m
+[0;31mE (97181) game-test: MASK is 4645, POSITION is 4612[0m
+[0;32mI (99281) GAME1: computer turn[0m
+[0;31mE (99281) game-test: MASK is 4709, POSITION is 97[0m
+[0;32mI (99731) SENDER: Send success: 6[0m
+[0;32mI (102831) SENDER: Send success: 0[0m
+[0;32mI (104381) GAME1: human turn[0m
+[0;32mI (105871) GAME:ADC: channel 3 (Column 3) is below the threshold: 1661 < 1664[0m
+[0;31mE (105871) game-test: MASK is 70245, POSITION is 70148[0m
+[0;32mI (105931) SENDER: Send success: 0[0m

@@ -1,7 +1,11 @@
 {
     "version":            "1.1",
     "project_name":       "GAME1",
+<<<<<<< HEAD
     "project_version":    "b25cfaa-dirty",
+=======
+    "project_version":    "7d40df1-dirty",
+>>>>>>> parent of b25cfaa (wout zeros)
     "project_path":       "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1",
     "idf_path":           "/home/wiktoria/esp/esp-idf",
     "build_dir":          "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build",
