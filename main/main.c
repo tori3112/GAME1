@@ -41,8 +41,8 @@
  **/
 bool game_over;
 NRF24_t dev;
-
-#define NUM_CHANNELS 7
+bool new_val;
+#define NUM_CHANNELS 8
 char position_string[41];
 char outcome_message[85];
 int adc_values[NUM_CHANNELS] = {0};
@@ -149,20 +149,29 @@ void sender(void *pvParameters)
 
     uint8_t buf[4];
     int i;
+    vTaskDelay(1000/portTICK_PERIOD_MS);
+    ESP_LOGW("LDR","ldr7 values: %d",adc_values[7]);
     while(1) {
-        /*TickType_t nowTick = xTaskGetTickCount();
-        sprintf((char *)buf, "Hello World %"PRIu32, nowTick);*/
-        memcpy(buf,&moveC, sizeof(moveC));//
-        i =  moveC;
-        Nrf24_send(&dev, &i);
-        vTaskDelay(100/portTICK_PERIOD_MS);
-        if (Nrf24_isSend(&dev, 1000)) {
-            ESP_LOGI(pcTaskGetName(0),"Send success: %d", i);
-            //vTaskDelete(task_handler);
-        } else {
-            ESP_LOGW(pcTaskGetName(0),"Send fail:");
+        if (new_val) {
+            //TickType_t nowTick = xTaskGetTickCount();
+            //sprintf((char *)buf, &moveC, sizeof(moveC));
+            ESP_LOGI("GAME", "moveC is %hhu and buffer is %s", moveC, buf);
+            memcpy(buf, &moveC, sizeof(moveC));
+            ESP_LOGI("GAME", "moveC is %hhu and buffer is %s", moveC, buf);
+            //i = 6;
+            Nrf24_send(&dev, &moveC);
+            //vTaskDelay(100 / portTICK_PERIOD_MS);
+            if (Nrf24_isSend(&dev, 1000)) {
+                ESP_LOGI(pcTaskGetName(0), "Send success: %hhu", moveC);
+                new_val=false;
+                vTaskDelay(7000/portTICK_PERIOD_MS);
+                ESP_LOGI("GAME","waiting to make human move done");
+                //vTaskDelete(task_handler);
+            } else {
+                ESP_LOGW(pcTaskGetName(0), "Send fail:");
+            }
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
         }
-        vTaskDelay(1000/portTICK_PERIOD_MS);
     }
 }
 #endif // CONFIG_SENDER
@@ -307,26 +316,25 @@ void setup_adc() {
     adc1_config_channel_atten(ADC1_CHANNEL_2,ADC_ATTEN_DB_11);
     adc1_config_channel_atten(ADC1_CHANNEL_7,ADC_ATTEN_DB_11);
 
-    /*thresholds[0] = adc1_get_raw(ADC1_CHANNEL_0) - 400;
-    thresholds[1] = adc1_get_raw(ADC1_CHANNEL_1) - 400;
-    thresholds[2] = adc1_get_raw(ADC1_CHANNEL_2) - 400;
-    thresholds[3] = adc1_get_raw(ADC1_CHANNEL_3) - 400;
-    thresholds[5] = adc1_get_raw(ADC1_CHANNEL_5) - 400;
-    thresholds[6] = adc1_get_raw(ADC1_CHANNEL_6) - 400;
-    thresholds[7] = adc1_get_raw(ADC1_CHANNEL_7) - 400;*/
-    thresholds[0] = 1400;
-    thresholds[1] = 1400;
-    thresholds[2] = 1400;
-    thresholds[3] = 1400;
-    thresholds[4] = 1400;
-    thresholds[5] = 1400;
-    thresholds[6] = 1400;
-    thresholds[7] = 1400;
-
-
+    /*thresholds[0] = adc1_get_raw(ADC1_CHANNEL_0) - 300;
+    thresholds[1] = adc1_get_raw(ADC1_CHANNEL_1) - 300;
+    thresholds[2] = adc1_get_raw(ADC1_CHANNEL_2) - 300;
+    thresholds[3] = adc1_get_raw(ADC1_CHANNEL_3) - 300;
+    thresholds[5] = adc1_get_raw(ADC1_CHANNEL_5) - 300;
+    thresholds[6] = adc1_get_raw(ADC1_CHANNEL_6) - 300;
+    thresholds[7] = adc1_get_raw(ADC1_CHANNEL_7) - 300;*/
+    thresholds[0] = (adc1_get_raw(ADC1_CHANNEL_0) + adc1_get_raw(ADC1_CHANNEL_0) + adc1_get_raw(ADC1_CHANNEL_0)) / 3 - 350;
+    thresholds[1] = (adc1_get_raw(ADC1_CHANNEL_1) + adc1_get_raw(ADC1_CHANNEL_1) + adc1_get_raw(ADC1_CHANNEL_1)) / 3 - 350;
+    thresholds[2] = (adc1_get_raw(ADC1_CHANNEL_2) + adc1_get_raw(ADC1_CHANNEL_2) + adc1_get_raw(ADC1_CHANNEL_2)) / 3 - 350;
+    thresholds[3] = (adc1_get_raw(ADC1_CHANNEL_3) + adc1_get_raw(ADC1_CHANNEL_3) + adc1_get_raw(ADC1_CHANNEL_3)) / 3 - 350;
+    thresholds[4] = (adc1_get_raw(ADC1_CHANNEL_4) + adc1_get_raw(ADC1_CHANNEL_4) + adc1_get_raw(ADC1_CHANNEL_4)) / 3 - 350;
+    thresholds[5] = (adc1_get_raw(ADC1_CHANNEL_5) + adc1_get_raw(ADC1_CHANNEL_5) + adc1_get_raw(ADC1_CHANNEL_5)) / 3 - 350;
+    thresholds[6] = (adc1_get_raw(ADC1_CHANNEL_6) + adc1_get_raw(ADC1_CHANNEL_6) + adc1_get_raw(ADC1_CHANNEL_6)) / 3 - 350;
+    thresholds[7] = (adc1_get_raw(ADC1_CHANNEL_7) + adc1_get_raw(ADC1_CHANNEL_7) + adc1_get_raw(ADC1_CHANNEL_7)) / 3 - 350;
 }
 
 void run_game() {
+    setup_adc();
     while (1) {
         vTaskDelay(100/portTICK_PERIOD_MS);
         //GAME INITIALISATION
@@ -346,17 +354,17 @@ void run_game() {
                     bool keepRunning = true;
                     int moveH;
                     while(keepRunning) {
-                        for (int i = 0; i < NUM_CHANNELS+1; i++) {
+                        for (int i = 0; i < NUM_CHANNELS; i++) {
                             if (i == 4) continue; // Skip channel 4 since it's not configured
                             adc_values[i] = adc1_get_raw(i);
                         }
-                        for (int i=0; i<NUM_CHANNELS+1; i++) {
+                        for (int i=0; i<NUM_CHANNELS; i++) {
                             if (i==4) continue;
                             if (adc_values[i] < thresholds[i]) {
-                                vTaskDelay(500/portTICK_PERIOD_MS);
+                                //vTaskDelay(4000/portTICK_PERIOD_MS);
                                 keepRunning = false;
                                 moveH=get_idx_from_value(adc_values,adc_values[i]);
-                                ESP_LOGI("GAME:ADC", "channel %d (Column %d) is below the threshold: %d < %d", channels[i], i + 1, adc_values[i], thresholds[i]);
+                                ESP_LOGI("GAME:ADC", "channel %d (Column %d) is below the threshold: %d < %d", channels[i], moveH, adc_values[i], thresholds[i]);
                                 break;
                             }
                         }
@@ -364,7 +372,6 @@ void run_game() {
                     play(&bb,moveH);
                     TEST_ASSERT_MESSAGE(false,"MASK is %llu, POSITION is %llu", bb.mask, bb.position);
                     //strncat(position_string,&moveH,1);
-                    vTaskDelay(100/portTICK_PERIOD_MS);
                     game_over = check_win(bb.position);
                     if (game_over) {
                         ESP_LOGI("GAME1","game won by human");
@@ -379,8 +386,10 @@ void run_game() {
                 case COMPUTER: {
                     setup_adc();
                     ESP_LOGI("GAME1","computer turn");
-                    move next_move = negamax_ab_bb(bb,-UINT64_MAX,UINT64_MAX,20);
+                    move next_move = negamax_ab_bb(bb,-UINT64_MAX,UINT64_MAX,5);
+                    new_val=true;
                     moveC = next_move.col;
+                    ESP_LOGI("GAME","next move C is %hhu", moveC);
                     //if (Nrf24_isSend(&dev,moveC);
                     /**
                      * PLACE FOR SENDING SIGNAL
@@ -389,7 +398,6 @@ void run_game() {
                     play(&bb,moveC);
                     TEST_ASSERT_MESSAGE(false,"MASK is %llu, POSITION is %llu", bb.mask, bb.position);
                     //strncat(position_string,&moveC,1);
-                    vTaskDelay(100 / portTICK_PERIOD_MS);
                     game_over = check_win(bb.position);
                     if (game_over) {
                         ESP_LOGI("GAME1","game won by computer");
@@ -423,11 +431,10 @@ void app_main(void)
     ESP_ERROR_CHECK(init_fs());
     ESP_ERROR_CHECK(start_rest_server(CONFIG_EXAMPLE_WEB_MOUNT_POINT));*/
     /* TASKS FOR nRF24 MODULE */
-    #if CONFIG_SENDER
-        xTaskCreate(&sender, "SENDER", 1024*3, NULL, 2, &task_handler);
-    #endif
+#if CONFIG_SENDER
+    xTaskCreate(&sender, "SENDER", 1024*3, NULL, 2, &task_handler);
+#endif
     /* CREATE TASK FOR THE GAME LOOP*/
     vTaskDelay(100 / portTICK_PERIOD_MS);
     xTaskCreate(run_game,"GAME",4096,NULL,10,NULL);
-
 }

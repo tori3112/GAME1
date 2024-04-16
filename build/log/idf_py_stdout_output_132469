@@ -1,0 +1,1063 @@
+��x�x�x�xx�x���x�x�x�*с0x10�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x29 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d84
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 16 2024 13:56:24[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0fd9ch ( 64924) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0001fdc4 vaddr=3fc93e00 size=00254h (   596) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f834h (129076) map[0m
+[0;32mI (142) esp_image: segment 3: paddr=0003f85c vaddr=3fc94054 size=02854h ( 10324) load[0m
+[0;32mI (144) esp_image: segment 4: paddr=000420b8 vaddr=40374000 size=0fdb8h ( 64952) load[0m
+[0;32mI (168) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (169) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (190) cpu_start: Application information:[0m
+[0;32mI (192) cpu_start: Project name:     GAME1[0m
+[0;32mI (197) cpu_start: App version:      00263c8-dirty[0m
+[0;32mI (203) cpu_start: Compile time:     Apr 16 2024 13:56:17[0m
+[0;32mI (209) cpu_start: ELF file SHA256:  203f78e2c...[0m
+[0;32mI (214) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa-dirty[0m
+[0;32mI (221) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (226) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (231) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (235) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (243) heap_init: At 3FC97260 len 000524B0 (329 KiB): RAM[0m
+[0;32mI (249) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (255) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (289) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (297) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (304) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) SENDER: Start Sender Configuration[0m
+[0;32mI (322) NRF24: CONFIG_MISO_GPIO=37[0m
+[0;32mI (332) NRF24: CONFIG_MOSI_GPIO=35[0m
+[0;32mI (332) NRF24: CONFIG_SCLK_GPIO=36[0m
+[0;32mI (342) NRF24: CONFIG_CE_GPIO=38[0m
+[0;32mI (342) NRF24: CONFIG_CSN_GPIO=39[0m
+[0;32mI (342) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (352) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) NRF24: spi_bus_initialize=0[0m
+[0;32mI (372) NRF24: spi_bus_add_device=0[0m
+[0;33mW (372) SENDER: Set RF Data Ratio to 1MBps[0m
+[0;33mW (372) SENDER: CONFIG_RETRANSMIT_DELAY=0[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO39
+CE Pin		 = GPIO38
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x4142434445 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x4142434445
+RX_PW_P0-6	 = 0x04 0x04 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x70
+RF_SETUP	 = 0x07
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 1Mbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 250 us
+[0;32mI (532) main_task: Returned from app_main()[0m
+[0;32mI (632) GAME1: game initialised[0m
+[0;32mI (632) GAME1: human turn[0m
+[0;32mI (1132) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (1132) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (1232) GAME1: computer turn[0m
+[0;32mI (1232) GAME: next move C is 6[0m
+[0;31mE (1232) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (1332) GAME1: human turn[0m
+[0;33mW (1432) LDR: ldr0 values: 2620[0m
+[0;32mI (1432) GAME: moveC is 6 and buffer is t��?[0m
+[0;32mI (1432) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (1442) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1442) SENDER: Send fail:[0m
+[0;32mI (1832) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2425 < 1070190184[0m
+[0;31mE (1832) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (1932) GAME1: computer turn[0m
+[0;32mI (1932) GAME: next move C is 0[0m
+[0;31mE (1932) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (2032) GAME1: human turn[0m
+[0;32mI (2442) GAME: moveC is 0 and buffer is ��?[0m
+[0;32mI (2442) GAME: moveC is 0 and buffer is [0m
+[0;33mW (2452) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2452) SENDER: Send fail:[0m
+[0;32mI (2532) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2429 < 1070190184[0m
+[0;31mE (2532) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (2632) GAME1: computer turn[0m
+[0;32mI (2632) GAME: next move C is 6[0m
+[0;31mE (2632) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (2732) GAME1: human turn[0m
+[0;32mI (3232) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (3232) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (3332) GAME1: computer turn[0m
+[0;32mI (3332) GAME: next move C is 6[0m
+[0;31mE (3332) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (3432) GAME1: human turn[0m
+[0;32mI (3452) GAME: moveC is 6 and buffer is [0m
+[0;32mI (3452) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (3462) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3462) SENDER: Send fail:[0m
+[0;32mI (3932) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2429 < 1070190184[0m
+[0;31mE (3932) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (4032) GAME1: computer turn[0m
+[0;32mI (4032) GAME: next move C is 6[0m
+[0;31mE (4032) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (4132) GAME1: game won by computer[0m
+[0;32mI (4332) GAME1: game initialised[0m
+[0;32mI (4332) GAME1: human turn[0m
+[0;32mI (4832) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (4832) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (4932) GAME1: computer turn[0m
+[0;32mI (4932) GAME: next move C is 6[0m
+[0;31mE (4932) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (5032) GAME1: human turn[0m
+[0;32mI (5532) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2427 < 1070190184[0m
+[0;31mE (5532) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (5632) GAME1: computer turn[0m
+[0;32mI (5632) GAME: next move C is 0[0m
+[0;31mE (5632) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (5732) GAME1: human turn[0m
+[0;32mI (6232) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2424 < 1070190184[0m
+[0;31mE (6232) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (6332) GAME1: computer turn[0m
+[0;32mI (6332) GAME: next move C is 6[0m
+[0;31mE (6332) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (6432) GAME1: human turn[0m
+[0;32mI (6932) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2412 < 1070190184[0m
+[0;31mE (6932) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (7032) GAME1: computer turn[0m
+[0;32mI (7032) GAME: next move C is 6[0m
+[0;31mE (7032) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (7132) GAME1: human turn[0m
+[0;32mI (7632) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2425 < 1070190184[0m
+[0;31mE (7632) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (7732) GAME1: computer turn[0m
+[0;32mI (7732) GAME: next move C is 6[0m
+[0;31mE (7732) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (7832) GAME1: game won by computer[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037bb39  PS      : 0x00060f33  A0      : 0x8037cc43  A1      : 0x3fc9e2a0  
+A2      : 0x3fc9ce6c  A3      : 0xffffffff  A4      : 0x3c025578  A5      : 0x00060f23  
+A6      : 0x000002f0  A7      : 0x0000cdcd  A8      : 0x00000000  A9      : 0x3fc96bc8  
+A10     : 0x3fc96bc8  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x3fc9b550  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037bb36:0x3fc9e2a0 0x4037cc40:0x3fc9e2c0 0x42008bb6:0x3fc9e2e0 0x4037b135:0x3fc9e330
+
+
+
+
+ELF file SHA256: 203f78e2c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403758b4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d84
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 16 2024 13:56:24[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0fd9ch ( 64924) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001fdc4 vaddr=3fc93e00 size=00254h (   596) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f834h (129076) map[0m
+[0;32mI (146) esp_image: segment 3: paddr=0003f85c vaddr=3fc94054 size=02854h ( 10324) load[0m
+[0;32mI (149) esp_image: segment 4: paddr=000420b8 vaddr=40374000 size=0fdb8h ( 64952) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (194) cpu_start: Pro cpu start user code[0m
+[0;32mI (194) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (194) cpu_start: Application information:[0m
+[0;32mI (197) cpu_start: Project name:     GAME1[0m
+[0;32mI (202) cpu_start: App version:      00263c8-dirty[0m
+[0;32mI (207) cpu_start: Compile time:     Apr 16 2024 13:56:17[0m
+[0;32mI (213) cpu_start: ELF file SHA256:  203f78e2c...[0m
+[0;32mI (219) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa-dirty[0m
+[0;32mI (225) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (230) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (235) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (240) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (247) heap_init: At 3FC97260 len 000524B0 (329 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (276) spi_flash: flash io: dio[0m
+[0;33mW (280) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (294) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (302) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) SENDER: Start Sender Configuration[0m
+[0;32mI (326) NRF24: CONFIG_MISO_GPIO=37[0m
+[0;32mI (336) NRF24: CONFIG_MOSI_GPIO=35[0m
+[0;32mI (336) NRF24: CONFIG_SCLK_GPIO=36[0m
+[0;32mI (346) NRF24: CONFIG_CE_GPIO=38[0m
+[0;32mI (346) NRF24: CONFIG_CSN_GPIO=39[0m
+[0;32mI (346) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (356) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (366) NRF24: spi_bus_initialize=0[0m
+[0;32mI (376) NRF24: spi_bus_add_device=0[0m
+[0;33mW (376) SENDER: Set RF Data Ratio to 1MBps[0m
+[0;33mW (376) SENDER: CONFIG_RETRANSMIT_DELAY=0[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO39
+CE Pin		 = GPIO38
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x4142434445 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x4142434445
+RX_PW_P0-6	 = 0x04 0x04 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x70
+RF_SETUP	 = 0x07
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 1Mbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 250 us
+[0;32mI (536) main_task: Returned from app_main()[0m
+[0;32mI (636) GAME1: game initialised[0m
+[0;32mI (636) GAME1: human turn[0m
+[0;32mI (1136) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2423 < 1070190184[0m
+[0;31mE (1136) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (1236) GAME1: computer turn[0m
+[0;32mI (1236) GAME: next move C is 6[0m
+[0;31mE (1236) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (1336) GAME1: human turn[0m
+[0;33mW (1436) LDR: ldr0 values: 2631[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is t��?[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (1446) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1446) SENDER: Send fail:[0m
+[0;32mI (1836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2441 < 1070190184[0m
+[0;31mE (1836) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (1936) GAME1: computer turn[0m
+[0;32mI (1936) GAME: next move C is 0[0m
+[0;31mE (1936) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (2036) GAME1: human turn[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is ��?[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is [0m
+[0;33mW (2456) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2456) SENDER: Send fail:[0m
+[0;32mI (2536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2437 < 1070190184[0m
+[0;31mE (2536) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (2636) GAME1: computer turn[0m
+[0;32mI (2636) GAME: next move C is 6[0m
+[0;31mE (2636) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (2736) GAME1: human turn[0m
+[0;32mI (3236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2423 < 1070190184[0m
+[0;31mE (3236) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (3336) GAME1: computer turn[0m
+[0;32mI (3336) GAME: next move C is 6[0m
+[0;31mE (3336) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (3436) GAME1: human turn[0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is [0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (3466) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3466) SENDER: Send fail:[0m
+[0;32mI (3936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2416 < 1070190184[0m
+[0;31mE (3936) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (4036) GAME1: computer turn[0m
+[0;32mI (4036) GAME: next move C is 6[0m
+[0;31mE (4036) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (4136) GAME1: game won by computer[0m
+[0;32mI (4336) GAME1: game initialised[0m
+[0;32mI (4336) GAME1: human turn[0m
+[0;32mI (4836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2415 < 1070190184[0m
+[0;31mE (4836) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (4936) GAME1: computer turn[0m
+[0;32mI (4936) GAME: next move C is 6[0m
+[0;31mE (4936) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (5036) GAME1: human turn[0m
+[0;32mI (5536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2426 < 1070190184[0m
+[0;31mE (5536) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (5636) GAME1: computer turn[0m
+[0;32mI (5636) GAME: next move C is 0[0m
+[0;31mE (5636) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (5736) GAME1: human turn[0m
+[0;32mI (6236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2444 < 1070190184[0m
+[0;31mE (6236) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (6336) GAME1: computer turn[0m
+[0;32mI (6336) GAME: next move C is 6[0m
+[0;31mE (6336) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (6436) GAME1: human turn[0m
+[0;32mI (6936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2451 < 1070190184[0m
+[0;31mE (6936) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (7036) GAME1: computer turn[0m
+[0;32mI (7036) GAME: next move C is 6[0m
+[0;31mE (7036) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (7136) GAME1: human turn[0m
+[0;32mI (7636) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2453 < 1070190184[0m
+[0;31mE (7636) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (7736) GAME1: computer turn[0m
+[0;32mI (7736) GAME: next move C is 6[0m
+[0;31mE (7736) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (7836) GAME1: game won by computer[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037bb39  PS      : 0x00060f33  A0      : 0x8037cc43  A1      : 0x3fc9e2a0  
+A2      : 0x3fc9ce6c  A3      : 0xffffffff  A4      : 0x3c025578  A5      : 0x00060f23  
+A6      : 0x000002f0  A7      : 0x0000cdcd  A8      : 0x00000000  A9      : 0x3fc96bc8  
+A10     : 0x3fc96bc8  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x3fc9b550  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037bb36:0x3fc9e2a0 0x4037cc40:0x3fc9e2c0 0x42008bb6:0x3fc9e2e0 0x4037b135:0x3fc9e330
+
+
+
+
+ELF file SHA256: 203f78e2c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403758b4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d84
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 16 2024 13:56:24[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0fd9ch ( 64924) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001fdc4 vaddr=3fc93e00 size=00254h (   596) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f834h (129076) map[0m
+[0;32mI (146) esp_image: segment 3: paddr=0003f85c vaddr=3fc94054 size=02854h ( 10324) load[0m
+[0;32mI (149) esp_image: segment 4: paddr=000420b8 vaddr=40374000 size=0fdb8h ( 64952) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (194) cpu_start: Pro cpu start user code[0m
+[0;32mI (194) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (194) cpu_start: Application information:[0m
+[0;32mI (197) cpu_start: Project name:     GAME1[0m
+[0;32mI (202) cpu_start: App version:      00263c8-dirty[0m
+[0;32mI (207) cpu_start: Compile time:     Apr 16 2024 13:56:17[0m
+[0;32mI (213) cpu_start: ELF file SHA256:  203f78e2c...[0m
+[0;32mI (219) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa-dirty[0m
+[0;32mI (225) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (230) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (235) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (240) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (247) heap_init: At 3FC97260 len 000524B0 (329 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (276) spi_flash: flash io: dio[0m
+[0;33mW (280) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (294) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (302) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) SENDER: Start Sender Configuration[0m
+[0;32mI (326) NRF24: CONFIG_MISO_GPIO=37[0m
+[0;32mI (336) NRF24: CONFIG_MOSI_GPIO=35[0m
+[0;32mI (336) NRF24: CONFIG_SCLK_GPIO=36[0m
+[0;32mI (346) NRF24: CONFIG_CE_GPIO=38[0m
+[0;32mI (346) NRF24: CONFIG_CSN_GPIO=39[0m
+[0;32mI (346) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (356) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (366) NRF24: spi_bus_initialize=0[0m
+[0;32mI (376) NRF24: spi_bus_add_device=0[0m
+[0;33mW (376) SENDER: Set RF Data Ratio to 1MBps[0m
+[0;33mW (376) SENDER: CONFIG_RETRANSMIT_DELAY=0[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO39
+CE Pin		 = GPIO38
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x4142434445 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x4142434445
+RX_PW_P0-6	 = 0x04 0x04 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x70
+RF_SETUP	 = 0x07
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 1Mbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 250 us
+[0;32mI (536) main_task: Returned from app_main()[0m
+[0;32mI (636) GAME1: game initialised[0m
+[0;32mI (636) GAME1: human turn[0m
+[0;32mI (1136) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2445 < 1070190184[0m
+[0;31mE (1136) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (1236) GAME1: computer turn[0m
+[0;32mI (1236) GAME: next move C is 6[0m
+[0;31mE (1236) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (1336) GAME1: human turn[0m
+[0;33mW (1436) LDR: ldr0 values: 2651[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is t��?[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (1446) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1446) SENDER: Send fail:[0m
+[0;32mI (1836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2445 < 1070190184[0m
+[0;31mE (1836) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (1936) GAME1: computer turn[0m
+[0;32mI (1936) GAME: next move C is 0[0m
+[0;31mE (1936) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (2036) GAME1: human turn[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is ��?[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is [0m
+[0;33mW (2456) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2456) SENDER: Send fail:[0m
+[0;32mI (2536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2445 < 1070190184[0m
+[0;31mE (2536) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (2636) GAME1: computer turn[0m
+[0;32mI (2636) GAME: next move C is 6[0m
+[0;31mE (2636) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (2736) GAME1: human turn[0m
+[0;32mI (3236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (3236) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (3336) GAME1: computer turn[0m
+[0;32mI (3336) GAME: next move C is 6[0m
+[0;31mE (3336) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (3436) GAME1: human turn[0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is [0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (3466) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3466) SENDER: Send fail:[0m
+[0;32mI (3936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2443 < 1070190184[0m
+[0;31mE (3936) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (4036) GAME1: computer turn[0m
+[0;32mI (4036) GAME: next move C is 6[0m
+[0;31mE (4036) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (4136) GAME1: game won by computer[0m
+[0;32mI (4336) GAME1: game initialised[0m
+[0;32mI (4336) GAME1: human turn[0m
+[0;32mI (4836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2445 < 1070190184[0m
+[0;31mE (4836) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (4936) GAME1: computer turn[0m
+[0;32mI (4936) GAME: next move C is 6[0m
+[0;31mE (4936) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (5036) GAME1: human turn[0m
+[0;32mI (5536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2444 < 1070190184[0m
+[0;31mE (5536) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (5636) GAME1: computer turn[0m
+[0;32mI (5636) GAME: next move C is 0[0m
+[0;31mE (5636) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (5736) GAME1: human turn[0m
+[0;32mI (6236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2445 < 1070190184[0m
+[0;31mE (6236) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (6336) GAME1: computer turn[0m
+[0;32mI (6336) GAME: next move C is 6[0m
+[0;31mE (6336) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (6436) GAME1: human turn[0m
+[0;32mI (6936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2441 < 1070190184[0m
+[0;31mE (6936) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (7036) GAME1: computer turn[0m
+[0;32mI (7036) GAME: next move C is 6[0m
+[0;31mE (7036) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (7136) GAME1: human turn[0m
+[0;32mI (7636) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2443 < 1070190184[0m
+[0;31mE (7636) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (7736) GAME1: computer turn[0m
+[0;32mI (7736) GAME: next move C is 6[0m
+[0;31mE (7736) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (7836) GAME1: game won by computer[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037bb39  PS      : 0x00060f33  A0      : 0x8037cc43  A1      : 0x3fc9e2a0  
+A2      : 0x3fc9ce6c  A3      : 0xffffffff  A4      : 0x3c025578  A5      : 0x00060f23  
+A6      : 0x000002f0  A7      : 0x0000cdcd  A8      : 0x00000000  A9      : 0x3fc96bc8  
+A10     : 0x3fc96bc8  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x3fc9b550  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037bb36:0x3fc9e2a0 0x4037cc40:0x3fc9e2c0 0x42008bb6:0x3fc9e2e0 0x4037b135:0x3fc9e330
+
+
+
+
+ELF file SHA256: 203f78e2c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403758b4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d84
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 16 2024 13:56:24[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0fd9ch ( 64924) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001fdc4 vaddr=3fc93e00 size=00254h (   596) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f834h (129076) map[0m
+[0;32mI (146) esp_image: segment 3: paddr=0003f85c vaddr=3fc94054 size=02854h ( 10324) load[0m
+[0;32mI (149) esp_image: segment 4: paddr=000420b8 vaddr=40374000 size=0fdb8h ( 64952) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (194) cpu_start: Pro cpu start user code[0m
+[0;32mI (194) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (194) cpu_start: Application information:[0m
+[0;32mI (197) cpu_start: Project name:     GAME1[0m
+[0;32mI (202) cpu_start: App version:      00263c8-dirty[0m
+[0;32mI (207) cpu_start: Compile time:     Apr 16 2024 13:56:17[0m
+[0;32mI (213) cpu_start: ELF file SHA256:  203f78e2c...[0m
+[0;32mI (219) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa-dirty[0m
+[0;32mI (225) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (230) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (235) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (240) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (247) heap_init: At 3FC97260 len 000524B0 (329 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (276) spi_flash: flash io: dio[0m
+[0;33mW (280) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (294) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (302) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) SENDER: Start Sender Configuration[0m
+[0;32mI (326) NRF24: CONFIG_MISO_GPIO=37[0m
+[0;32mI (336) NRF24: CONFIG_MOSI_GPIO=35[0m
+[0;32mI (336) NRF24: CONFIG_SCLK_GPIO=36[0m
+[0;32mI (346) NRF24: CONFIG_CE_GPIO=38[0m
+[0;32mI (346) NRF24: CONFIG_CSN_GPIO=39[0m
+[0;32mI (346) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (356) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (366) NRF24: spi_bus_initialize=0[0m
+[0;32mI (376) NRF24: spi_bus_add_device=0[0m
+[0;33mW (376) SENDER: Set RF Data Ratio to 1MBps[0m
+[0;33mW (376) SENDER: CONFIG_RETRANSMIT_DELAY=0[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO39
+CE Pin		 = GPIO38
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x4142434445 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x4142434445
+RX_PW_P0-6	 = 0x04 0x04 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x70
+RF_SETUP	 = 0x07
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 1Mbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 250 us
+[0;32mI (536) main_task: Returned from app_main()[0m
+[0;32mI (636) GAME1: game initialised[0m
+[0;32mI (636) GAME1: human turn[0m
+[0;32mI (1136) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2437 < 1070190184[0m
+[0;31mE (1136) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (1236) GAME1: computer turn[0m
+[0;32mI (1236) GAME: next move C is 6[0m
+[0;31mE (1236) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (1336) GAME1: human turn[0m
+[0;33mW (1436) LDR: ldr0 values: 2636[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is t��?[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (1446) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1446) SENDER: Send fail:[0m
+[0;32mI (1836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2423 < 1070190184[0m
+[0;31mE (1836) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (1936) GAME1: computer turn[0m
+[0;32mI (1936) GAME: next move C is 0[0m
+[0;31mE (1936) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (2036) GAME1: human turn[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is ��?[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is [0m
+[0;33mW (2456) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2456) SENDER: Send fail:[0m
+[0;32mI (2536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2395 < 1070190184[0m
+[0;31mE (2536) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (2636) GAME1: computer turn[0m
+[0;32mI (2636) GAME: next move C is 6[0m
+[0;31mE (2636) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (2736) GAME1: human turn[0m
+[0;32mI (3236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2411 < 1070190184[0m
+[0;31mE (3236) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (3336) GAME1: computer turn[0m
+[0;32mI (3336) GAME: next move C is 6[0m
+[0;31mE (3336) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (3436) GAME1: human turn[0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is [0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (3466) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3466) SENDER: Send fail:[0m
+[0;32mI (3936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2413 < 1070190184[0m
+[0;31mE (3936) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (4036) GAME1: computer turn[0m
+[0;32mI (4036) GAME: next move C is 6[0m
+[0;31mE (4036) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (4136) GAME1: game won by computer[0m
+[0;32mI (4336) GAME1: game initialised[0m
+[0;32mI (4336) GAME1: human turn[0m
+[0;32mI (4836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2414 < 1070190184[0m
+[0;31mE (4836) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (4936) GAME1: computer turn[0m
+[0;32mI (4936) GAME: next move C is 6[0m
+[0;31mE (4936) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (5036) GAME1: human turn[0m
+[0;32mI (5536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2419 < 1070190184[0m
+[0;31mE (5536) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (5636) GAME1: computer turn[0m
+[0;32mI (5636) GAME: next move C is 0[0m
+[0;31mE (5636) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (5736) GAME1: human turn[0m
+[0;32mI (6236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2440 < 1070190184[0m
+[0;31mE (6236) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (6336) GAME1: computer turn[0m
+[0;32mI (6336) GAME: next move C is 6[0m
+[0;31mE (6336) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (6436) GAME1: human turn[0m
+[0;32mI (6936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2445 < 1070190184[0m
+[0;31mE (6936) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (7036) GAME1: computer turn[0m
+[0;32mI (7036) GAME: next move C is 6[0m
+[0;31mE (7036) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (7136) GAME1: human turn[0m
+[0;32mI (7636) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2447 < 1070190184[0m
+[0;31mE (7636) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (7736) GAME1: computer turn[0m
+[0;32mI (7736) GAME: next move C is 6[0m
+[0;31mE (7736) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (7836) GAME1: game won by computer[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037bb39  PS      : 0x00060f33  A0      : 0x8037cc43  A1      : 0x3fc9e2a0  
+A2      : 0x3fc9ce6c  A3      : 0xffffffff  A4      : 0x3c025578  A5      : 0x00060f23  
+A6      : 0x000002f0  A7      : 0x0000cdcd  A8      : 0x00000000  A9      : 0x3fc96bc8  
+A10     : 0x3fc96bc8  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x3fc9b550  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037bb36:0x3fc9e2a0 0x4037cc40:0x3fc9e2c0 0x42008bb6:0x3fc9e2e0 0x4037b135:0x3fc9e330
+
+
+
+
+ELF file SHA256: 203f78e2c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403758b4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d84
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 16 2024 13:56:24[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0fd9ch ( 64924) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001fdc4 vaddr=3fc93e00 size=00254h (   596) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f834h (129076) map[0m
+[0;32mI (146) esp_image: segment 3: paddr=0003f85c vaddr=3fc94054 size=02854h ( 10324) load[0m
+[0;32mI (149) esp_image: segment 4: paddr=000420b8 vaddr=40374000 size=0fdb8h ( 64952) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (194) cpu_start: Pro cpu start user code[0m
+[0;32mI (194) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (194) cpu_start: Application information:[0m
+[0;32mI (197) cpu_start: Project name:     GAME1[0m
+[0;32mI (202) cpu_start: App version:      00263c8-dirty[0m
+[0;32mI (207) cpu_start: Compile time:     Apr 16 2024 13:56:17[0m
+[0;32mI (213) cpu_start: ELF file SHA256:  203f78e2c...[0m
+[0;32mI (219) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa-dirty[0m
+[0;32mI (225) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (230) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (235) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (240) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (247) heap_init: At 3FC97260 len 000524B0 (329 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (276) spi_flash: flash io: dio[0m
+[0;33mW (280) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (294) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (302) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) SENDER: Start Sender Configuration[0m
+[0;32mI (326) NRF24: CONFIG_MISO_GPIO=37[0m
+[0;32mI (336) NRF24: CONFIG_MOSI_GPIO=35[0m
+[0;32mI (336) NRF24: CONFIG_SCLK_GPIO=36[0m
+[0;32mI (346) NRF24: CONFIG_CE_GPIO=38[0m
+[0;32mI (346) NRF24: CONFIG_CSN_GPIO=39[0m
+[0;32mI (346) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (356) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (366) NRF24: spi_bus_initialize=0[0m
+[0;32mI (376) NRF24: spi_bus_add_device=0[0m
+[0;33mW (376) SENDER: Set RF Data Ratio to 1MBps[0m
+[0;33mW (376) SENDER: CONFIG_RETRANSMIT_DELAY=0[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO39
+CE Pin		 = GPIO38
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x4142434445 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x4142434445
+RX_PW_P0-6	 = 0x04 0x04 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x70
+RF_SETUP	 = 0x07
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 1Mbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 250 us
+[0;32mI (536) main_task: Returned from app_main()[0m
+[0;32mI (636) GAME1: game initialised[0m
+[0;32mI (636) GAME1: human turn[0m
+[0;32mI (1136) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2437 < 1070190184[0m
+[0;31mE (1136) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (1236) GAME1: computer turn[0m
+[0;32mI (1236) GAME: next move C is 6[0m
+[0;31mE (1236) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (1336) GAME1: human turn[0m
+[0;33mW (1436) LDR: ldr0 values: 2641[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is t��?[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (1446) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1446) SENDER: Send fail:[0m
+[0;32mI (1836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2454 < 1070190184[0m
+[0;31mE (1836) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (1936) GAME1: computer turn[0m
+[0;32mI (1936) GAME: next move C is 0[0m
+[0;31mE (1936) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (2036) GAME1: human turn[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is ��?[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is [0m
+[0;33mW (2456) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2456) SENDER: Send fail:[0m
+[0;32mI (2536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2443 < 1070190184[0m
+[0;31mE (2536) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (2636) GAME1: computer turn[0m
+[0;32mI (2636) GAME: next move C is 6[0m
+[0;31mE (2636) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (2736) GAME1: human turn[0m
+[0;32mI (3236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2451 < 1070190184[0m
+[0;31mE (3236) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (3336) GAME1: computer turn[0m
+[0;32mI (3336) GAME: next move C is 6[0m
+[0;31mE (3336) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (3436) GAME1: human turn[0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is [0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (3466) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3466) SENDER: Send fail:[0m
+[0;32mI (3936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2443 < 1070190184[0m
+[0;31mE (3936) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (4036) GAME1: computer turn[0m
+[0;32mI (4036) GAME: next move C is 6[0m
+[0;31mE (4036) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (4136) GAME1: game won by computer[0m
+[0;32mI (4336) GAME1: game initialised[0m
+[0;32mI (4336) GAME1: human turn[0m
+[0;32mI (4836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2439 < 1070190184[0m
+[0;31mE (4836) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (4936) GAME1: computer turn[0m
+[0;32mI (4936) GAME: next move C is 6[0m
+[0;31mE (4936) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (5036) GAME1: human turn[0m
+[0;32mI (5536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2439 < 1070190184[0m
+[0;31mE (5536) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (5636) GAME1: computer turn[0m
+[0;32mI (5636) GAME: next move C is 0[0m
+[0;31mE (5636) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (5736) GAME1: human turn[0m
+[0;32mI (6236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2427 < 1070190184[0m
+[0;31mE (6236) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (6336) GAME1: computer turn[0m
+[0;32mI (6336) GAME: next move C is 6[0m
+[0;31mE (6336) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (6436) GAME1: human turn[0m
+[0;32mI (6936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (6936) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (7036) GAME1: computer turn[0m
+[0;32mI (7036) GAME: next move C is 6[0m
+[0;31mE (7036) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (7136) GAME1: human turn[0m
+[0;32mI (7636) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (7636) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (7736) GAME1: computer turn[0m
+[0;32mI (7736) GAME: next move C is 6[0m
+[0;31mE (7736) game-test: MASK is 4432812073152, POSITION is 137371712[0m
+[0;32mI (7836) GAME1: game won by computer[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037bb39  PS      : 0x00060f33  A0      : 0x8037cc43  A1      : 0x3fc9e2a0  
+A2      : 0x3fc9ce6c  A3      : 0xffffffff  A4      : 0x3c025578  A5      : 0x00060f23  
+A6      : 0x000002f0  A7      : 0x0000cdcd  A8      : 0x00000000  A9      : 0x3fc96bc8  
+A10     : 0x3fc96bc8  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x3fc9b550  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037bb36:0x3fc9e2a0 0x4037cc40:0x3fc9e2c0 0x42008bb6:0x3fc9e2e0 0x4037b135:0x3fc9e330
+
+
+
+
+ELF file SHA256: 203f78e2c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403758b4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d84
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.3-dev-422-ga7fbf452fa-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 16 2024 13:56:24[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0fd9ch ( 64924) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001fdc4 vaddr=3fc93e00 size=00254h (   596) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f834h (129076) map[0m
+[0;32mI (146) esp_image: segment 3: paddr=0003f85c vaddr=3fc94054 size=02854h ( 10324) load[0m
+[0;32mI (149) esp_image: segment 4: paddr=000420b8 vaddr=40374000 size=0fdb8h ( 64952) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (194) cpu_start: Pro cpu start user code[0m
+[0;32mI (194) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (194) cpu_start: Application information:[0m
+[0;32mI (197) cpu_start: Project name:     GAME1[0m
+[0;32mI (202) cpu_start: App version:      00263c8-dirty[0m
+[0;32mI (207) cpu_start: Compile time:     Apr 16 2024 13:56:17[0m
+[0;32mI (213) cpu_start: ELF file SHA256:  203f78e2c...[0m
+[0;32mI (219) cpu_start: ESP-IDF:          v5.3-dev-422-ga7fbf452fa-dirty[0m
+[0;32mI (225) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (230) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (235) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (240) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (247) heap_init: At 3FC97260 len 000524B0 (329 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (276) spi_flash: flash io: dio[0m
+[0;33mW (280) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (294) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (302) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) SENDER: Start Sender Configuration[0m
+[0;32mI (326) NRF24: CONFIG_MISO_GPIO=37[0m
+[0;32mI (336) NRF24: CONFIG_MOSI_GPIO=35[0m
+[0;32mI (336) NRF24: CONFIG_SCLK_GPIO=36[0m
+[0;32mI (346) NRF24: CONFIG_CE_GPIO=38[0m
+[0;32mI (346) NRF24: CONFIG_CSN_GPIO=39[0m
+[0;32mI (346) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (356) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (366) NRF24: spi_bus_initialize=0[0m
+[0;32mI (376) NRF24: spi_bus_add_device=0[0m
+[0;33mW (376) SENDER: Set RF Data Ratio to 1MBps[0m
+[0;33mW (376) SENDER: CONFIG_RETRANSMIT_DELAY=0[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO39
+CE Pin		 = GPIO38
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x4142434445 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x4142434445
+RX_PW_P0-6	 = 0x04 0x04 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x70
+RF_SETUP	 = 0x07
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 1Mbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 250 us
+[0;32mI (536) main_task: Returned from app_main()[0m
+[0;32mI (636) GAME1: game initialised[0m
+[0;32mI (636) GAME1: human turn[0m
+[0;32mI (1136) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2430 < 1070190184[0m
+[0;31mE (1136) game-test: MASK is 128, POSITION is 128[0m
+[0;32mI (1236) GAME1: computer turn[0m
+[0;32mI (1236) GAME: next move C is 6[0m
+[0;31mE (1236) game-test: MASK is 192, POSITION is 64[0m
+[0;32mI (1336) GAME1: human turn[0m
+[0;33mW (1436) LDR: ldr0 values: 2627[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is t��?[0m
+[0;32mI (1436) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (1446) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1446) SENDER: Send fail:[0m
+[0;32mI (1836) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (1836) game-test: MASK is 16576, POSITION is 16512[0m
+[0;32mI (1936) GAME1: computer turn[0m
+[0;32mI (1936) GAME: next move C is 0[0m
+[0;31mE (1936) game-test: MASK is 2113728, POSITION is 2097216[0m
+[0;32mI (2036) GAME1: human turn[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is ��?[0m
+[0;32mI (2446) GAME: moveC is 0 and buffer is [0m
+[0;33mW (2456) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2456) SENDER: Send fail:[0m
+[0;32mI (2536) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2430 < 1070190184[0m
+[0;31mE (2536) game-test: MASK is 270549184, POSITION is 268451968[0m
+[0;32mI (2636) GAME1: computer turn[0m
+[0;32mI (2636) GAME: next move C is 6[0m
+[0;31mE (2636) game-test: MASK is 270557376, POSITION is 2105408[0m
+[0;32mI (2736) GAME1: human turn[0m
+[0;32mI (3236) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2431 < 1070190184[0m
+[0;31mE (3236) game-test: MASK is 34630295744, POSITION is 34628190336[0m
+[0;32mI (3336) GAME1: computer turn[0m
+[0;32mI (3336) GAME: next move C is 6[0m
+[0;31mE (3336) game-test: MASK is 34631344320, POSITION is 3153984[0m
+[0;32mI (3436) GAME1: human turn[0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is [0m
+[0;32mI (3456) GAME: moveC is 6 and buffer is ��?[0m
+[0;33mW (3466) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3466) SENDER: Send fail:[0m
+[0;32mI (3936) GAME:ADC: channel 1077374472 (Column 7) is below the threshold: 2432 < 1070190184[0m
+[0;31mE (3936) game-test: MASK is 4432677855424, POSITION is 4432674701440[0m
+[0;32mI (4036) GAME1: computer turn[0m
+[0;32mI (4036) GAME: next move C is 6[0m
+[0;31mE (4036) game-test: MASK is 4432812073152, POSITION is 137371712[0m

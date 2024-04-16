@@ -1,0 +1,117 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/bootloader/esp-idf/esptool_py && /home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/wiktoria/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:27:
+/home/wiktoria/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c: In function 'sender':
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:151:9: warning: unused variable 'i' [-Wunused-variable]
+  151 |     int i;
+      |         ^
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c: In function 'setup_adc':
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:310:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  310 |     adc1_config_channel_atten(ADC1_CHANNEL_0,ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/wiktoria/esp/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from /home/wiktoria/esp/esp-idf/components/driver/deprecated/driver/adc.h:15:
+/home/wiktoria/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:311:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  311 |     adc1_config_channel_atten(ADC1_CHANNEL_1,ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wiktoria/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:312:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  312 |     adc1_config_channel_atten(ADC1_CHANNEL_3,ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wiktoria/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:313:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  313 |     adc1_config_channel_atten(ADC1_CHANNEL_5,ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wiktoria/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:314:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  314 |     adc1_config_channel_atten(ADC1_CHANNEL_6,ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wiktoria/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:315:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  315 |     adc1_config_channel_atten(ADC1_CHANNEL_2,ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wiktoria/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:316:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  316 |     adc1_config_channel_atten(ADC1_CHANNEL_7,ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wiktoria/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c: In function 'run_game':
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:381:67: warning: overflow in conversion from 'long long unsigned int' to 'int' changes value from '18446744073709551615' to '-1' [-Woverflow]
+  381 |                     move next_move = negamax_ab_bb(bb,-UINT64_MAX,UINT64_MAX,5);
+      |                                                                   ^~~~~~~~~~
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c: At top level:
+/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/main/main.c:204:13: warning: 'initialise_mdns' defined but not used [-Wunused-function]
+  204 | static void initialise_mdns(void)
+      |             ^~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable GAME1.elf
+[6/8] Generating binary image from built executable
+esptool.py vv4.8.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/GAME1.bin
+[7/8] cd /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/esp-idf/esptool_py && /home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/wiktoria/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/partition_table/partition-table.bin /home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build/GAME1.bin
+GAME1.bin binary size 0x41eb0 bytes. Smallest app partition is 0x100000 bytes. 0xbe150 bytes (74%) free.
+[7/8] cd /home/wiktoria/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/wiktoria/esp/esp-idf -D "SERIAL_TOOL=/home/wiktoria/.espressif/python_env/idf5.3_py3.10_env/bin/python;;/home/wiktoria/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build -P /home/wiktoria/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 GAME1.bin 0x8000 partition_table/partition-table.bin
+esptool.py vv4.8.dev1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: f4:12:fa:df:2a:68
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00051fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21040 bytes to 13065...
+Writing at 0x00000000... (100 %)
+Wrote 21040 bytes (13065 compressed) at 0x00000000 in 0.7 seconds (effective 235.0 kbit/s)...
+Hash of data verified.
+Compressed 270000 bytes to 138600...
+Writing at 0x00010000... (11 %)
+Writing at 0x0001c690... (22 %)
+Writing at 0x00024f85... (33 %)
+Writing at 0x0002b653... (44 %)
+Writing at 0x00031b15... (55 %)
+Writing at 0x00039515... (66 %)
+Writing at 0x00042761... (77 %)
+Writing at 0x00048550... (88 %)
+Writing at 0x0004eeb6... (100 %)
+Wrote 270000 bytes (138600 compressed) at 0x00010000 in 3.3 seconds (effective 659.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 385.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
