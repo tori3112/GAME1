@@ -1,6 +1,10 @@
-//
-// Created by wiktoria on 28/03/24.
-//
+/**
+ * This file includes some functionalities and general ideas from Connect4 Game Solver.
+ * That project includes code in C++ to analyse positions and compute scores of all possible moves
+ * in the game. The code is published under the AGPL v3 license.
+ * Author: Pascal Pons
+ * Link to the repository: https://github.com/PascalPons/connect4
+ */
 
 /**
  * THE (BIT) BOARD
@@ -13,22 +17,14 @@
  */
 
 // include standard C libraries
-#include <stdio.h>
 #include <malloc.h>
 #include <limits.h>
 #include <time.h>
 #include <stdlib.h>
-#include <esp_log.h>
 
 // include project dependencies
 #include "alphabeta.h"
 #include "board.h"
-
-void initialise_bitboard(bitboard* bb){
-    bb->position=0;
-    bb->mask=0;
-    bb->no_moves=0;
-}
 
 bool can_play(uint64_t bb_mask, int col){
     if ((col < 0) | (col > COLS)) {
@@ -38,7 +34,6 @@ bool can_play(uint64_t bb_mask, int col){
 }
 
 void play(bitboard *bb, int col){
-    //printf("\nNO_MOVES: %d,\nMASK: %lu,\nPOSITION: %lu\n",bb->no_moves,bb->mask,bb->position);
     if (!can_play(bb->mask,col)) {
         return;
     } else {
@@ -186,13 +181,14 @@ move negamax_ab_bb(const bitboard bb, int alpha, int beta, int depth) {
         return next_move;
     }
     if (depth == 0) {
-        move dummy = {6, evaluate_bb(bb.position)};
+        srand(time(NULL));
+        int rand_col = rand()%COLS;
+        move dummy = {rand_col, evaluate_bb(bb.position)};
         return dummy;
     }
     for (int i=0; i<COLS; i++) {
         if (can_play(bb.mask,i) && is_win(bb,i) ) {
             move move1 = {i,WIN_SCORE};
-            //printBoard(board);
             return move1;
         }
     }
@@ -201,7 +197,6 @@ move negamax_ab_bb(const bitboard bb, int alpha, int beta, int depth) {
     for (int i=0; i<COLS; i++) {
         if (can_play(bb.mask,order[i])) {
             bitboard copy = {bb.position,bb.mask,bb.no_moves};
-            //printf("or: %lu vs cp: %lu\n",bb.position,copy.position);
             play(&copy,order[i]);
             move next_move = negamax_ab_bb(copy,-beta, -alpha, depth-1);
             next_move.score = -next_move.score;

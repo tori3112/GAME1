@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "GAME1",
-    "project_version":    "00263c8-dirty",
+    "project_version":    "a18a679-dirty",
     "project_path":       "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1",
     "idf_path":           "/home/wiktoria/esp/esp-idf",
     "build_dir":          "/home/wiktoria/Documents/labs/ee3/esp-idf-mirf/GAME1/build",

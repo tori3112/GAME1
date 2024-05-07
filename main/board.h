@@ -1,6 +1,19 @@
-//
-// Created by wiktoria on 15/12/23.
-//
+/**
+ * This file includes some functionalities and general ideas from Connect4 Game Solver.
+ * That project includes code in C++ to analyse positions and compute scores of all possible moves
+ * in the game. The code is published under the AGPL v3 license.
+ * Author: Pascal Pons
+ * Link to the repository: https://github.com/PascalPons/connect4
+ */
+
+/**
+ * NOTE
+ * the methods included in this header file correspond to the negamax algorithm
+ * from before the bitboard implementation, the difference is the board here is
+ * one array of ints
+ * because of that, the methods used for game logic and the computation of the next
+ * computer move differ (are based on mathematical operations)
+ */
 
 #ifndef GAME_BOARD_H
 #define GAME_BOARD_H
@@ -19,11 +32,10 @@
 #define HIGH_SCORE 50
 #define MEDIUM_SCORE 20
 
-/* THAT WAS BEFORE BITBOARD IMPLEMENTATION
- * typedef struct {
+typedef struct {
     int board[ROWS*COLS]; //using modulo -- "field_idx = row * COLS + col"
     char position_notation[ROWS*COLS];
-} board;*/
+} board;
 
 typedef struct {
     int col;
@@ -31,86 +43,72 @@ typedef struct {
 } move;
 
 /**
- * checks whether a specific column in a board is full
+ * fills the @param board with zeros
+ * meaning EMPTY cells
+ */
+void initializeBoard(int *board);
+
+/**
+ * prints out the present @param board set up
+ */
+__attribute__((unused)) void printBoard(const int *board);
+
+/**
+ * checks whether the move into @param col is possible;
+ * check whether a column is full
+ * @return true is the move is valid
+ */
+bool can_add_coin(const int board[ROWS*COLS], int col);
+
+/**
+ * for a specific @param turn, it updates the virtual connect 4 @param board;
+ * adds a coin associated with player's @param turn into specif @param col
+ */
+void add_coin(int *board, int col, int turn);
+
+/**
+ * check if there is a line of four on the referenced @param board
+ */
+bool check_four(const int board[ROWS*COLS]);
+
+/**
+ * checks whether a specific @param col in a @param board is full;
  * necessary to check available moves
- * @param board
- * @param col
  * @return true if the top field within the column is not empty
  */
 bool is_column_full(const int board[ROWS*COLS], int col);
 
 /**
- * check if there is a line of four
- * @param board because we are going to check on a specific board
- * @return true if we got a four in line and false if there is none
- * might use Bresenham's line algorithm
- * to be used in recursive method for the moves
+ * @return the row of the first 0 in the @param col
  */
-bool check_four(const int board[ROWS*COLS]);
+int filled_level(const int board[ROWS*COLS], int col);
 
 /**
- * checks whether the next move is a win move
- * @param board
- * @param col
- * @return true if after the move into @param col game is over
+ * @return number of moves made since the beginning of the game;
+ * based on non-zero fields on the board
+ */
+int getNoMoves(const int board[ROWS*COLS]);
+
+/**
+ * copies the contents of @param board into @param copy
+ */
+void copy_board(const int board[ROWS*COLS], int copy[ROWS*COLS]);
+
+/**
+ * checks whether the move into @param col leads to immediate win;
+ * the methods are grouped since they have the same purpose but are checking
+ * different orientations of the lines
  */
 bool is_it_win_move(const int board[ROWS*COLS], int col, int turn);
 bool check_vertical(const int board[ROWS*COLS], int col,int turn);
 bool check_horizontal(const int board[ROWS*COLS], int col,int turn);
 bool check_diagonal_positive(const int board[ROWS*COLS], int col,int turn);
 bool check_diagonal_negative(const int board[ROWS*COLS], int col,int turn);
-/**
- * checks whether the move is possible
- * not only if the column is full
- * but whether @param col is within valid range
- * @param board
- * @param col
- * @return true is the move is valid
- */
-bool can_add_coin(const int board[ROWS*COLS], int col);
 
 /**
- * for human turn, inputs coins into non-material board,
- * initially, based on human input number
- * later on, this will be updated to incorporate sensor input
- * @param board is the board we are updating
- * @param col_no is the column number in which we input coin
- * @param turn shows whose turn it is (human or computer)
- * @return should it be bool or int to make sure it didn't fail?
- */
-void add_coin(int *board, int col, int turn);
-
-/**
- * returns the row of the first 0 in the column
- * form the top
- * @param board
- * @param col
- * @return
- */
-int filled_level(const int board[ROWS*COLS], int col);
-
-/**
- * prints out the present board set up
- * @param board
- */
-void printBoard(const int *board);
-
-/**
- * @return number of moves made since the beginning of the game
- * based on non-zero fields on the board
- */
-int getNoMoves(const int board[ROWS*COLS]);
-
-/**
- * fill the board with zeros
- * @param board
- */
-void initializeBoard(int *board);
-
-/**
- *
- * @param board
- * @return
+ * computes the score of the specific @param board set up;
+ * the methods are grouped since they have the same purpose but are
+ * evaluating different orientations of lines
  */
 int evaluate(const int board[ROWS*COLS]);
 int evaluate_vertical(const int board[ROWS*COLS]);
@@ -118,10 +116,17 @@ int evaluate_horizontal(const int board[ROWS*COLS]);
 int evaluate_positive_diagonal(const int board[ROWS*COLS]);
 int evaluate_negative_diagonal(const int board[ROWS*COLS]);
 
+/**
+ * simple negamax algorithm to find the next best move on
+ * the @param board, for the player's @param turn;
+ * checks only for specific @param depth of the search tree
+ */
 move negamax(int board[ROWS*COLS], int depth, int turn);
 
-void copy_board(const int board[ROWS*COLS], int copy[ROWS*COLS]);
-int *get_exploration_order(int width);
-bool test_copy(const int board[ROWS*COLS], int copy[ROWS*COLS]);
+/**
+ * negamax algorithm with alpha-beta pruning implementation
+ * with ints (not bits)
+ */
+move negamax_ab(int board[ROWS*COLS], int alpha, int beta, int depth, int turn);
 
 #endif // GAME_BOARD_H

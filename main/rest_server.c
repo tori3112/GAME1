@@ -1,13 +1,14 @@
-/* HTTP Restful API Server
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
+/**
+ * This file includes functionalities from HTTP Restful API Server from ESP IDF.
+ * The specific example used shows how to implement a RESTful API server and
+ * HTTP server on ESP32.
+ * This example code is in the Public Domain (or CC0 licensed, at your option.)
+ * Author: Harshit Malpani
+ * Link to the repository (specific example used):
+ * https://github.com/espressif/esp-idf/tree/master/examples/protocols/http_server/restful_server
 */
+
 #include <string.h>
-#include <fcntl.h>
 #include "esp_http_server.h"
 #include "esp_chip_info.h"
 #include "esp_random.h"
@@ -43,7 +44,6 @@ typedef struct rest_server_context {
 
 #define CHECK_FILE_EXTENSION(filename, ext) (strcasecmp(&filename[strlen(filename) - strlen(ext)], ext) == 0)
 
-/* MY SWEAT AND STRUGGLES */
 static esp_err_t game_post_handler(httpd_req_t *req) {
     int total_len = req->content_len;
     int cur_len = 0;
@@ -67,7 +67,6 @@ static esp_err_t game_post_handler(httpd_req_t *req) {
     cJSON *item = cJSON_GetObjectItemCaseSensitive(root,"message");
     char *msg = item->valuestring;
     if (strncmp(msg, "game is ready", sizeof("game is ready") - 1) == 0) {
-        // Start the game loop task
         if (xTaskCreate(&run_game, "GAME", 4096, NULL, 10, &task_handler) != pdPASS) {
             ESP_LOGE(REST_TAG, "Failed to create game loop task");
             httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "Failed to create game loop task");
@@ -91,8 +90,6 @@ static esp_err_t game_get_handler (httpd_req_t *req) {
         return ESP_OK;
     }
 }
-
-/* END OF MY STRUGGLES */
 
 esp_err_t start_rest_server(const char *base_path)
 {
