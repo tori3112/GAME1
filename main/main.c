@@ -154,9 +154,9 @@ void sender(void *pvParameters)
     Nrf24_printDetails(&dev);
 
     uint8_t buf[4];
-    int i;
+    int i; //why do we need that?
     vTaskDelay(1000/portTICK_PERIOD_MS);
-    ESP_LOGW("LDR","ldr7 values: %d",adc_values[7]);
+    //ESP_LOGW("LDR","ldr7 values: %d",adc_values[7]);
     while(1) {
         if (new_val) {
             ESP_LOGI("GAME", "moveC is %hhu and buffer is %s", moveC, buf);
@@ -330,7 +330,7 @@ void setup_adc() {
 void run_game() {
     setup_adc();
     while (1) {
-        vTaskDelay(100/portTICK_PERIOD_MS);
+        vTaskDelay(1000/portTICK_PERIOD_MS);
         //GAME INITIALISATION
         ESP_LOGI("GAME1","game initialised");
         bitboard bb = {0, 0, 0};
@@ -357,22 +357,27 @@ void run_game() {
                             if (adc_values[i] < thresholds[i]) {
                                 keepRunning = false;
                                 moveH=get_idx_from_value(adc_values,adc_values[i]);
-                                ESP_LOGI("GAME:ADC", "channel %d (Column %d) is below the threshold: %d < %d", channels[i], moveH, adc_values[i], thresholds[i]);
+                                ESP_LOGI("GAME:ADC", "input into column %d (channel %d is below the threshold: %d < %d)",
+                                                                        moveH, channels[i], adc_values[i], thresholds[i]);
+                                vTaskDelay(700/portTICK_PERIOD_MS); // wait after move detection
                                 break;
                             }
                         }
+                        vTaskDelay(700/portTICK_PERIOD_MS); // wait after nothing got detection
                     }
                     play(&bb,moveH);
                     TEST_ASSERT_MESSAGE(false,"MASK is %llu, POSITION is %llu", bb.mask, bb.position);
                     strncat(position_string,&moveH,1);
+                    vTaskDelay(700/portTICK_PERIOD_MS);
                     game_over = check_win(bb.position);
                     if (game_over) {
                         ESP_LOGI("GAME1","game won by human");
-                        strcpy(outcome_message,"Conratulations, you won! Press the reset button to play again.");
+                        strcpy(outcome_message,"Congratulations, you won! Press the reset button to play again.");
                         vTaskDelay(100/portTICK_PERIOD_MS);
                         vTaskDelete(task_handler);
                     } else {
                         turn = COMPUTER;
+                        vTaskDelay(700/portTICK_PERIOD_MS);
                     }
                     break;}
                 case COMPUTER: {
@@ -380,25 +385,29 @@ void run_game() {
                     ESP_LOGI("GAME1","computer turn");
                     //move next_move = negamax_ab_bb(bb,-UINT64_MAX,UINT64_MAX,10);
                     int moveC = esp_random() % 7; //should there be a plus 1
+                    vTaskDelay(700/portTICK_PERIOD_MS); // wait after move was chosen
                     /**
                      * PLACE FOR SENDING SIGNAL
                      * TO THE SERVOMOTORS
                      */
                     new_val=true;
+                    vTaskDelay(700/portTICK_PERIOD_MS);
                     //moveC = next_move.col;
                     ESP_LOGI("GAME","next move C is %hhu", moveC);
+                    vTaskDelay(700/portTICK_PERIOD_MS);
                     play(&bb,moveC);
-
+                    vTaskDelay(700/portTICK_PERIOD_MS);
                     TEST_ASSERT_MESSAGE(false,"MASK is %llu, POSITION is %llu", bb.mask, bb.position);
                     game_over = check_win(bb.position);
                     if (game_over) {
                         ESP_LOGI("GAME1","game won by computer");
                         strcpy(outcome_message,
                                "Unfortunately you lost, better luck next time! Press the reset button to try again.");
-                        vTaskDelay(100 / portTICK_PERIOD_MS);
+                        vTaskDelay(800 / portTICK_PERIOD_MS);
                         vTaskDelete(task_handler);
                     } else {
                         turn = HUMAN;
+                        vTaskDelay(700/portTICK_PERIOD_MS);
                     }
                     break;
                 }
